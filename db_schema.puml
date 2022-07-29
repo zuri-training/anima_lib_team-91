@@ -1,1 +1,28 @@
-ECHO is on.
+@startuml
+left to right direction
+skinparam ClassAttributeIconSize 0
+
+
+
+class User << (U, aliceblue) >> #aliceblue ##[bold]blue {
+    - id: Integer [PK]
+    - firstName: String
+    - lastName: String
+    - username: String
+    - email: String
+    - profile_pic : Image
+    - password: Hash
+}
+
+class CustomAnimation << (C, LightYellow) >> #LightYellow ##[bold]Black {
+    - id: Integer [PK]
+    - author: User [FK]
+    - title: String
+    - date_last_created: Date
+    - src_code: String
+
+}
+
+User "1" *-- "0..*" CustomAnimation
+
+@enduml
