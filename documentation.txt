@@ -42,7 +42,7 @@ styleflow is a library that holds interactive animation that can be readily acce
 Installation:
 
 styleflow is downloaded from www.styleflow.css as a .scss file.
-The library is compatible with vs code, editor and other blablabla code editors.
+The library is compatible with visual code, sublime text editor and espresso.
 
 
 File location:
