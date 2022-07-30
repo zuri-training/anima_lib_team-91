@@ -2,12 +2,15 @@
 A library that allows beginners perform basic web animation using normal language
 
 ## The UML Database Model
-![alt text](./out/db_schema/uml_database_model.png)
+![The schema uml diagram](./db_schema/anima_lib_team_91_uml_diagram.png)
+
+## The ER Database Model
+![The schema uml diagram](./db_schema/anima_lib_team_91_erd_diagram.png)
 
 ### The UML Diagram Explained
 
 #### User Model
-From the UML Diagram above; the `User` model represents a user registered on our website. The `User` model instance has an `id` field which serves as the Primary Key; it will also contain a `firstName`, `lastName`, `username` and an `email` field all of which stores String values. There are also `profile_pic` and `password` fields which store an Image and Hash characters respectively.
+From the UML Diagram above; the `User` model represents a user registered on our website. The `User` model instance has an `id` field which serves as the Primary Key; it will also contain a `firstName`, `lastName`, `username` and an `email` field all of which stores String values. There is also a `password` fields which stores a Hashed characters sequence respectively.
 
 #### CustomAnimation Model
 From the UML Diagram above; the `CustomAnimation` model represents a custom animation created by each `User` model instance on our website. Every `CustomAnimation` model instance will have an `id` field which serves as the Primary Key; it will also have a `title` field which stores String values. There are also `date_last_created` and `src_code` fields which store a Date and String (the CSS equivalent of the animation) respectively. It also has an `author` field which is a Foreign Key and stores the Primary Key of the `User` instance that created the `CustomAnimation`.
