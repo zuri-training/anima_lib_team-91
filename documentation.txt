@@ -72,6 +72,14 @@ styleflow contains basic, ready-to-use animation for styling web elements. They 
 6.  class-name: fade-out
     styles an html object to fade out
 
+Privacy:
+
+1. styleflow allows users manage personal info.
+
+2. styleflow does not sell user information.
+
+3. styleflow is built with strong security features that continuously protect your information.
+
 
 BACKGROUND
 
@@ -109,12 +117,3 @@ Recommended text-editors:
 2. Visual Studio Code editor
 
 3. Espresso editor
-
-
-Privacy:
-
-1. styleflow allows users manage personal info.
-
-2. styleflow does not sell user information.
-
-3. styleflow is built with strong security features that continuously protect your information.
