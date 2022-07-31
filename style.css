@@ -140,8 +140,9 @@ main h1 {
     border-width: 0;
     height: 110%;
     position: absolute;
-    left: -3%;
+    left: -5%;
     top: -5%;
+    z-index: 0;
 }
 #benefits {
     position: relative;
@@ -152,7 +153,10 @@ main h1 {
 #benefits li {
     list-style-type: disc;
     list-style-position: initial;
-    vertical-align: middle;
+}
+#benefits li::marker {
+    font-size: 2rem;
+    color: var(--greyy);
 }
 #benefits li > h3 {
     margin: 1.5em 0 0.2em;
@@ -259,8 +263,8 @@ footer {
     position: relative;
     padding: 2em 2em 0;
     margin: 3em 0 0;
-    border-top: 2px solid var(--regular-purple);
-    border-bottom: 2px solid var(--regular-purple);
+    border-top: 1px solid var(--regular-purple);
+    border-bottom: 1px solid var(--regular-purple);
 
 }
 footer #logo {
