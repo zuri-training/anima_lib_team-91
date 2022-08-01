@@ -1,13 +1,16 @@
+INTRODUCTION
+
+styleflow is a library that holds interactive animation that can be readily accessed by developers. This is an animation library IS built completely with Sass,
+and currently contain only basic animation. 
+
+
 TUTORIAL
 
-This is an animation library built completely with Sass, and it has some basic animation on it.
 1. Move-up : this animation moves a given/selected html element up on the page.
 2. Move-down : By adding this animation to an html element it causes a downward movement.
 3. Fade: this animation tends to reduce the opacity of the element its added to, this gives the element a faded animation
 4. Move-left: this animation moves a given/selected html element left on the page.
 5. Bounce: using this animation on an html element gives it a bounce effect.
-
-This is just to mention a few, Our team plan to add multiple animations to give our user options to choose from.
 
 
 HOW-TO GUIDE:
@@ -15,7 +18,7 @@ HOW-TO GUIDE:
 how to download our library:
 
 The library files will be downloadable to our users for fast and easy use. To do that first, the user must sign up to our website or signin 
-if they are already registered. Then they can download the library zip files from the library page
+if they are already registered. Then they can download the library zip files from the library page.
 
 how to use basic animations on html elements:
 
@@ -33,22 +36,16 @@ not satisfied with animation.
 you can adjust the animation to suite your satisfaction.
 
 
-TECHNICAL REFERENCE
-
-About styleflow:
-
-styleflow is a library that holds interactive animation that can be readily accessed by developers.
+TECHNICAL REFERENCE:
 
 Installation:
 
 styleflow is downloaded from www.styleflow.css as a .scss file.
 The library is compatible with visual code, sublime text editor and espresso.
 
-
 File location:
 
 styleflow is downloaded into the download folder of a user's local machine.
-
 
 File content:
 
@@ -94,7 +91,6 @@ self-damaging to newbies and less rewarding websites.
 
 The debate seems to stage speed against generic websites and could well be an exciting one to indulge in. But here are a few things we have noted;
 
-
 1. Frameworks are useful for developers who don't need to reinvent the wheel.
 
 2. Frameworks work well for learners who learn by questioning processes as they would eventually question certain rule abstractions.
@@ -108,7 +104,6 @@ The debate seems to stage speed against generic websites and could well be an ex
 
 Thus, the dabble into frameworks or the resistance to frameworks largely rest on the intentions of the developer and rightly do. Therefore, styleflow users are
 encouraged to be certain about their need for an animation library before indulging.
-
 
 Recommended text-editors:
 
