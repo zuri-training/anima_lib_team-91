@@ -1,9 +1,9 @@
 # anima_lib_team-91
-A library that allows beginners perform basic web animation using normal language.
+A library that allows beginners perform basic web animation using normal language
 
 The following are relevant links for the project:
 
-https://github.com/zuri-training/anima_lib_team-91/blob/konee/documentation.txt  -  Documentation Link
+https://docs.google.com/document/d/1TfR9h9DS4pubgDtNiomrwd95Xj1WWobxMckyFBRYXDI/edit#  -  Documentation Link
 
 https://www.figma.com/file/7KC7ZQMjTujDu1qgyaUnxw/StyleFlow-Project?node-id=174%3A206  -  Figma Link
 

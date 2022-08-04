@@ -1,0 +1,169 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'home/style.css' %}">
+    <title>StyleFlow</title>
+</head>
+<body>
+    <div id="wrapper">
+
+        <header>
+            <div id="header-top">
+                <img src="{% static "home/images/logos/styleFlow_header_logo_vector.png" %}" alt="StyleFlow Logo" id="logo">
+                <ul id="nav-links">
+                    <li><a href="#" id="home">Home</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Animations</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+                <div id="auth">
+                    <a href="{% url 'user_auth:signin' %}" id="log-in">Login</a>
+                    <a href="{% url 'user_auth:signup' %}" class="link-btns">Sign Up</a>
+                </div>
+            </div>
+    
+            <div id="main-header">
+                <div class="description">
+                    <h1>Fun and interactive animation for your websites</h1>
+                    <p>Sign up to get full access to all the tools needed to customize, edit and add animations to your projects.</p>
+                    <a href="{% url 'user_auth:signup' %}" class="link-btns">Get Started</a>
+                </div>
+                <img src="{% static 'home/images/landing_page_fun_and_interactive.gif' %}" alt="Fun and Interactive" id="sprinting-dood">
+            </div>
+        </header>
+        <hr>
+        <div id="sponsors">
+            <p>Used by developers and designers from <b>15,000+ companies worldwide</b></p>
+            <div id="brands">
+                <img src="{% static 'home/images/logos/amazon-2-logo-svgrepo-com.svg' %}" alt="Amazon logo" id="brand">
+                <img src="{% static 'home/images/logos/google-svgrepo-com.svg' %}" alt="Google logo" id="brand">
+                <img src="{% static 'home/images/logos/uber-svgrepo-com.svg' %}" alt="Uber" id="brand">
+                <img src="{% static 'home/images/logos/airbnb-2-logo-svgrepo-com.svg' %}" alt="Airbnb logo" id="brand">
+                <img src="{% static 'home/images/logos/spotify.svg' %}" alt="Spotify logo" id="brand">
+            </div>
+        </div>
+        <hr>
+    
+        <main>
+            <h1>Do amazing things with StyleFlow</h1>
+            <div id="inner-main">
+                <img src="{% static 'home/images/landing_page_do_amazing_things.gif' %}" alt="Do amazing things" id="swinging-dood">
+                <ul id="benefits">
+                    <hr class="vertical">
+                    <li>
+                        <h3>Access thousands of free animations</h3>
+                        <p>Explore the world's largest pool of ready-to-use, free animations and express yourself in a more fun and exciting way.</p>
+                    </li>
+                    <li>
+                        <h3>Customize animations for your projects</h3>
+                        <p>StyleFlow allows  you to easily edit the color of animations to any fun color of your choosing.</p>
+                    </li>
+                    <li>
+                        <h3>Review and test animations</h3>
+                        <p>Use StyleFlow to get an accurate feel of how your animations will look and behave before you put them in your project.</p>
+                    </li>
+                    <li>
+                        <h3>Embed animations across your website</h3>
+                        <p>Implement animations in just a few clicks across WordPress, Shopify, Webflow, Squarespace, Wix or any website.</p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div id="mid">
+                <p>Explore the world's largest pool of ready-to-use, free animations and express yourself in a more fun and exciting way.</p>
+                <a href="{% url 'user_auth:signup' %}" class="link-btns">Get Started</a>
+            </div>
+    
+            <div id="about-us">
+                <h1>A little about us</h1>
+                <p>StyleFlow is a web-based animation platform. Our goal is to help beginner developers and designers perform basic web animation using normal language. We create fun and interactive animations that is both functional and easy to use. Whether it's simple and minimal or edgy and futuristic style, we have got you covered!</p>
+                <p>Over time there has been a shift in design, interactive interface has gradually taken precedence over static and that was this change is the sole reason StyleFlow was born. We not only allow developers bring life to designs, but give them access to download our open source library so that it is possible to embed in their own code.</p>
+                <a href="#" id="read-more">Read more...</a>
+            </div>
+    
+            <div id="testimonials">
+                <h2 class="small">TESTIMONIALS</h1>
+                <h1>What Our Users Are Saying</h1>
+                <div class="testimonies">
+                    <div class="row">
+                        <div class="user-testimony">
+                            <img src="{% static 'home/images/profile_pic.jpg' %}" alt="user image">
+                            <h4>Sharon Adekanbi</h4>
+                            <h6 class="username">@sharon_adekanbi</h6>
+                            <p class="msg">
+                                I can't tell you how much better my designs are with these easy-to-use animation.
+                            </p>
+                        </div>
+                        <div class="user-testimony">
+                            <img src="{% static 'home/images/profile_pic.jpg' %}" alt="user image">
+                            <h4>Praise Nwosu</h4>
+                            <h6 class="username">@praisenwosu</h6>
+                            <p class="msg">
+                                Really amazing stuff! This has become my favorite animation library.
+                            </p>
+                        </div>
+                        <div class="user-testimony">
+                            <img src="{% static 'home/images/profile_pic.jpg' %}" alt="user image">
+                            <h4>Nicole Samuel</h4>
+                            <h6 class="username">@nicole.sam</h6>
+                            <p class="msg">
+                                StyleFlow saves our team tons of time, is well designed and documented, and looks great.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="user-testimony">
+                            <img src="{% static 'home/images/profile_pic.jpg' %}" alt="user image">
+                            <h4>Julian Philips</h4>
+                            <h6 class="username">@just.julian</h6>
+                            <p class="msg">
+                                It provides just enough to get started, implements sensible defaults, but is also very extensible and customisable.
+                            </p>
+                        </div>
+                        <div class="user-testimony">
+                            <img src="{% static 'home/images/profile_pic.jpg' %}" alt="user image">
+                            <h4>Oscar Bamidele</h4>
+                            <h6 class="username">@oscarbamidele</h6>
+                            <p class="msg">
+                                This might be one of the best I've seen!!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="purple-bg">
+                <div class="info">
+                    <p>Out with static, in with interactive</p>
+                    <h1>Step up your animation game with StyleFlow</h1>
+                    <a href="{% url 'user_auth:signup' %}" class="link-btns">Sign up now</a>
+                </div>
+                <img src="{% static 'home/images/landing_page_step_up.gif' %}" alt="Step Up your animation" id="strolling-dood">
+            </div>
+        </main>
+
+        <footer>
+            <img src="{% static 'home/images/logos/sytleFlow_footer_logo_vector.png' %}" alt="StyleFlow logo" id="logo">
+            <div>
+                <a href="#" class="link-btns">Documentation</a>
+            </div>
+            <p class="copyright">Copyright &copy 2022 StyleFlow Inc. All rights reserved.</p>
+            <div id="footer-links">
+                <a href="#">Privacy Policy</a>
+                <hr>
+                <a href="#">Terms & Conditions</a>
+            </div>
+        </footer>
+
+
+
+
+    </div>
+
+</body>
+</html>

@@ -1,7 +1,8 @@
 from django.shortcuts import render
-from django.contrib.auth.decorators import login_required
 
-@login_required
+
+# Create your views here.
+
 def home(request):
-    user = request.user
-    return render(request, "home/home.html", {'username': user})
+    # this renders the home.html file to the user upon visiting the site
+    return render(request, "home/index.html")
