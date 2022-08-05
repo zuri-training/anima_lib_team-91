@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block css %}
+
+    <link rel="stylesheet" href="{% static 'css/documentation/documentation.css' %}">
+
+{% endblock %}
+
+{% block content %}
+
+    <header>
+        <p>logo</p>
+        <p>Home</p>
+        <p>Animation</p>
+        <p>About Us</p>
+        <p>Documentation</p>
+        <button>Login</button>
+        <button>Sign up</button>
+    </header>
+
+{% endblock %}
+
+{% block js_block %}
+
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+
+{% endblock %}

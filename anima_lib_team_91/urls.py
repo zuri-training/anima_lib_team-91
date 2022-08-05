@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),                        # admin
     path('', include('home.urls')),                         # base app for the website
     path('auth/', include('user_auth.urls')),               # for user authentication (e.g, signing in, signing up, signing out)
+    path('documentation/', include('documentation.urls'))   # path to the documentation app
 ]
