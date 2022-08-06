@@ -5,8 +5,56 @@ html {
 
 body{
     background-color: #FFFFFF;
-    display: flex;
     margin: 0%;
+}
+
+.wrapper{
+    display: flex;
+}
+
+#header-top {
+    padding: 1em 4em;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0px solid hsla(0, 0%, 50%, 0.1);
+    box-shadow: 0 0px 15px hsla(0, 0%, 50%, 0.2);
+    position: sticky;
+    top: 0;
+    background-color: hsla(0, 0%, 100%, 1);;
+}
+
+#nav-links {
+    font-size: 0.8em;
+    line-height: 4em;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    color: hsla(0, 0%, 50%, 1);
+    font-weight: 500;
+}
+
+#auth {
+    display: flex;
+    justify-content: space-between;
+    width: 34%;
+    font-weight: 400;
+}
+#auth a {
+    display: inline-block;
+    padding: 0.4em 2.5em;
+    font-weight: 400;
+    margin: auto;
+    border-radius: 4px;
+}
+#log-in {
+    color: var(--regular-purple);
+    border: 1px solid #8820bb;
+}
+.link-btns {
+    background-color: #8820bb;
+    color: hsla(0, 0%, 100%, 1);
+    padding: 0.8em 2.5em;
+    border-radius: 4px;
 }
 
 .outer-side{
@@ -19,6 +67,8 @@ body{
     padding: 16px;
     background-color: #E8D2F1;
     height:auto;
+    position: sticky;
+    top: 16px;
     /* position: ;   there is more code to be included in this style */   
 }
 

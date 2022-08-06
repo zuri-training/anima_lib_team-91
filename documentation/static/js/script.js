@@ -83,3 +83,6 @@ function fadeOutFunc(){
         screen.innerHTML = "I'm the screen"
     } 
 }
+
+
+
