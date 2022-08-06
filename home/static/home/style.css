@@ -20,8 +20,8 @@ html {
 
 body {
     font-family: Poppins;
-    /* background-color: #1e1e1e; */
-    background-color: var(--bg-color);
+    background-color: #1e1e1e;
+    /* background-color: var(--bg-color); */
 }
 
 #wrapper {
