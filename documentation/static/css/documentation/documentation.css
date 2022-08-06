@@ -67,9 +67,7 @@ body{
     padding: 16px;
     background-color: #E8D2F1;
     height:auto;
-    position: sticky;
-    top: 16px;
-    /* position: ;   there is more code to be included in this style */   
+    /* position: ;   code edits applicable here */   
 }
 
 .right{
