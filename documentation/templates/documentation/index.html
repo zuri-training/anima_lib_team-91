@@ -9,12 +9,25 @@
 {% endblock %}
 
 {% block content %}
-
-    <div class="outer-side">
-       <!-- outer side space -->
+    <div id="header-top">
+        <img src="{% static "home/images/logos/styleFlow_header_logo_vector.png" %}" alt="StyleFlow Logo" id="logo">
+        <ul id="nav-links">
+            <li><a href="{% url 'home' %}" id="home">Home</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Animations</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+        <div id="auth">
+            <a href="{% url 'user_auth:signin' %}" id="log-in">Login</a>
+            <a href="{% url 'user_auth:signup' %}" class="link-btns">Sign Up</a>
+        </div>
     </div>
-    
-    <main>
+
+    <div class="wrapper">
+        
+        <div class="outer-side">
+            <!-- outer side space -->
+        </div>
 
         <div class="left">
             <h3>INTRODUCTION</h3>
@@ -23,11 +36,11 @@
             <h3>TECHNICAL REFERENCE</h3>
             <h3>BACKGROUND</h3>
         </div>
-    
+
         <div class="right">
-    
+
             <div class="grid-container">
-    
+
                 <section>
                     <h3 class="center-text">TUTORIAL</h3>
                     <h4>Animate a string to move-up:</h4>
@@ -53,13 +66,13 @@
                             </td>
                         </tr>
                     </table>
-    
+
                 </section>
-    
+
                 <section>        
                     <h4>Animate a string to move-down:</h4>
                     <p>Add the class "move-down" to the h1 tag to animate the enclosed string</p>
-    
+
                     <table class="terminal">
                         <tr>
                             <th>Input</th>
@@ -81,13 +94,13 @@
                             </td>
                         </tr>
                     </table>
-    
+
                 </section>
-    
+
                 <section>        
                     <h4>Animate a string to move-left:</h4>
                     <p>Add the class "move-left" to the h1 tag to animate the enclosed string</p>
-    
+
                     <table class="terminal">
                         <tr>
                             <th>Input</th>
@@ -109,13 +122,13 @@
                             </td>
                         </tr>
                     </table>
-    
+
                 </section>
-    
+
                 <section>        
                     <h4>Animate a string to move-right:</h4>
                     <p>Add the class "move-right" to the h1 tag to animate the enclosed string</p>
-    
+
                     <table class="terminal">
                         <tr>
                             <th>Input</th>
@@ -137,13 +150,13 @@
                             </td>
                         </tr>
                     </table>
-    
+
                 </section>
-    
+
                 <section>        
                     <h4>Animate a string to fade-in:</h4>
                     <p>Add the class "fade-in" to the h1 tag to animate the enclosed string</p>
-    
+
                     <table class="terminal">
                         <tr>
                             <th>Input</th>
@@ -165,13 +178,13 @@
                             </td>
                         </tr>
                     </table>
-    
+
                 </section>
-    
+
                 <section>        
                     <h4>Animate a string to fade-out:</h4>
                     <p>Add the class "fade-out" to the h1 tag to animate the enclosed string</p>
-    
+
                     <table class="terminal">
                         <tr>
                             <th>Input</th>
@@ -193,13 +206,13 @@
                             </td>
                         </tr>
                     </table>
-    
+
                 </section>
-    
-                 <section>        
+
+                <section>        
                     <h4>Animate a string to bounce:</h4>
                     <p>Add the class "bounce" to the h1 tag to animate the enclosed string</p>
-    
+
                     <table class="terminal">
                         <tr>
                             <th>Input</th>
@@ -221,16 +234,15 @@
                             </td>
                         </tr>
                     </table>
-    
+
                 </section>
             </div>
-    
-        </div>
-    </main>
 
-    
-    <div class="outer-side">
-        <!-- outer side space -->
+        </div>
+        
+        <div class="outer-side">
+            <!-- outer side space -->
+        </div>
     </div>
 
 {% endblock %}
