@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+{% extends 'home/base.html' %}
+{% load crispy_forms_tags %}
+
+
+
+{% comment %} <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -44,4 +49,28 @@
 
     <script src="" async defer></script>
 </body>
-</html>
+</html> {% endcomment %}
+
+
+
+
+<!--
+    REFACTORING THE SIGNUP HTML
+-->
+
+
+{% block main %}
+
+<div>
+    <form method="POST" style="width:50%; margin:auto;">
+        {% csrf_token %}
+        <legend>
+            Sign Up today
+        </legend>
+        {{ form|crispy }}
+        <button type='submit'>Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="{% url 'user_auth:signin' %}">Sign In</a></p>
+</div>
+
+{% endblock main %}

@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+{% extends 'home/base.html' %}
+
+
+{% comment %} <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -21,4 +24,22 @@
     </form>
         <button><a href="{% url 'user_auth:signup' %}">Sign Up</a></button>
 </body>
-</html>
+</html> {% endcomment %}
+
+
+
+{% block main %}
+
+<div>
+    <form method="POST" style="width:50%; margin:auto;">
+        {% csrf_token %}
+        <legend>
+            Sign In
+        </legend>
+        {{ form|crispy }}
+        <button type='submit'>Sign In</button>
+    </form>
+    <p>New user? <a href="{% url 'user_auth:signup' %}">Sign Up</a></p>
+</div>
+
+{% endblock main %}

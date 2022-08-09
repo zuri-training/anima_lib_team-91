@@ -10,7 +10,7 @@ from .forms import SigninUserForm
 
 
 # Create your views here.
-
+"""
 def signin(request):
     if request.user.is_authenticated:                                               # if user is already signed in
         return redirect(reverse('home:home'))
@@ -30,14 +30,15 @@ def signin(request):
     return render(request, 'user_auth/signin.html', {'form': form})
 
 
-# @login_required                                                                     # you must be logged in before you can signout
+
 def signout(request):
     if request.user.is_authenticated:
         logout(request)
         return redirect(reverse('home:home'))
     return redirect(reverse('user_auth:signin'))
+"""
 
-
+"""
 def signup(request):
     if request.user.is_authenticated:                                               # i.e user is already logged in
         return redirect(reverse('home:home'))
@@ -82,4 +83,29 @@ def signup(request):
         return redirect(reverse('home:home'))
 
     return render(request, "user_auth/signup.html")
+"""
 
+
+# REFACTORING THE FORMS AND THEIR CORRESPONDING VIEWS
+from django.shortcuts import render, redirect
+from django.contrib import messages
+from django.urls import reverse
+
+from .forms import SigninUserForm
+
+
+
+
+# SIGNUP view
+def signup(request):
+    if request.method == 'POST':
+        form = SigninUserForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data.get('username')
+            messages.success(request, f"Your account have been created successfully. You can login now.")
+            return redirect(reverse('user_auth:signin'))
+    else:
+        form = SigninUserForm()
+    return render(request, 'user_auth/signup.html', {'form': form})
+    

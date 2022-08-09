@@ -71,6 +71,14 @@ body {
 #nav-links a {
     color: var(--greyy);
 }
+#flash-msg {
+    display: absolute;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.2rem 0;
+    top: 0;
+}
 
 
 #login, #signup {

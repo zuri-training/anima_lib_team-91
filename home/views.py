@@ -5,4 +5,4 @@ from django.shortcuts import render
 
 def home(request):
     # this renders the home.html file to the user upon visiting the site
-    return render(request, "home/index.html")
+    return render(request, "home/index.html", {'title': "Home"})
