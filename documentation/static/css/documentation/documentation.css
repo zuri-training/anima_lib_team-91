@@ -20,7 +20,7 @@ body{
 .left{
     flex: 20%;
     padding: 16px;
-    height: 6rem;
+    height: fit-content;
     position:sticky;
     top: 6.8rem;
 }
@@ -94,4 +94,35 @@ ol{
 
 .center-text{
     text-align: center;
+}
+
+.interaction-box{
+    border-top: 1px solid var(--regular-purple);
+    height: 10%;
+    padding: 20px;
+    
+}
+#yes{
+    background-color: var(--bg-color);
+    color: var(--regular-purple);
+}
+
+#yes, #no{
+    width: 6.625rem;
+    height: 2.0833333333333335rem;
+    font-size: 16px;
+}
+
+.center-div{
+    width: 13.916666666666666rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+}
+.yes-no {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

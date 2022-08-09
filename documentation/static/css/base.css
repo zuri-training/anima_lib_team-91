@@ -14,10 +14,6 @@
     box-sizing: border-box;
 }
 
-/* html {
-    font-size: 21px;
-} */
-
 body {
     font-family: 'Poppins';
     background-color: #1e1e1e;
@@ -25,7 +21,6 @@ body {
 
 #wrapper {
     background-color: var(--bg-color);
-    /* width: 63rem; screen-width */
     margin: auto;
 }
 
@@ -43,7 +38,6 @@ body {
 }
 
 #nav-links {
-    /* font-size: 0.6666666666666666rem; */
     width: 34.589947089947096%;
     line-height: 3.375rem;
     font-size: 16px;
@@ -60,7 +54,6 @@ a#animation, a#home, a#documentation, a#about-us {
 #login, #signup {
     width: 6.625rem;
     height: 2.0833333333333335rem;
-    /* font-size: 0.8333333333333334rem; */
     font-size: 16px;
 }
 
