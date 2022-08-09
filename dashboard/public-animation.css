@@ -1,0 +1,38 @@
+header {
+    margin-left: 15%;
+    /* text-align: center; */
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: auto 10%;
+}
+
+button {
+    background: #B26AD2;
+    font: poppins;
+    padding: 1%;
+}
+
+
+/* .text {
+    text-align: center;
+} */
+
+img {
+    /* position: absolute; */
+    width: 12em;
+    height: 12em;
+    /* left: 477px;
+    top: 267px; */
+    /* background: url(.png); */
+}
+
+.lower {
+    font-weight: normal;
+}
+
+p {
+    font-size: 0.9em;
+}
