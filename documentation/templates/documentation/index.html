@@ -9,19 +9,6 @@
 {% endblock %}
 
 {% block content %}
-    <div id="header-top">
-        <img src="{% static "home/images/logos/styleFlow_header_logo_vector.png" %}" alt="StyleFlow Logo" id="logo">
-        <ul id="nav-links">
-            <li><a href="{% url 'home:home' %}" id="home">Home</a></li>
-            <li><a href="#">Documentation</a></li>
-            <li><a href="#">Animations</a></li>
-            <li><a href="#">About Us</a></li>
-        </ul>
-        <div id="auth">
-            <a href="{% url 'user_auth:signin' %}" id="log-in">Login</a>
-            <a href="{% url 'user_auth:signup' %}" class="link-btns" id="signup">Sign Up</a>
-        </div>
-    </div>
 
     <div class="wrapper">
         
@@ -324,13 +311,13 @@
                     <p>The debate seems to stage speed against generic websites and could well be an exciting one to indulge in. 
                         But here are a few things we have noted;
                     </p>
-                    <ul>
+                    <ol>
                         <li>Frameworks are useful for developers who don't need to reinvent the wheel.</li>
                         <li>Frameworks work well for learners who learn by questioning processes as they would eventually question certain rule abstractions.</li>
                         <li>Frameworks actually help with speed and this may be at the expense of customization.</li>
                         <li>Frameworks could come very handy for building mini-projects that do not involve a design team.</li>
                         <li>Frameworks largely discourage research as a lot of design-solutions could be available in certain libraries for retrieval.</li>
-                    </ul>
+                    </ol>
 
                     <p>Thus, the dabble into frameworks or the resistance to frameworks largely rest on the intentions of the developer and rightly do. 
                        Therefore, styleflow users are encouraged to be certain about their need for an animation library before indulging.
@@ -351,29 +338,6 @@
             <!-- outer side space -->
         </div>
     </div>
-    <footer>
-        <div class="bottom-line">
-        <!-- line -->
-        </div>
-        <div class="interactivity">
-            <h4>Was this helpful?</h4>
-        </div>
-        <div class="bottom-line">
-        <!-- line -->
-        </div>
-        <div class="footer-details">
-            <img src="{% static 'home/images/logos/sytleFlow_footer_logo_vector.png' %}" alt="StyleFlow logo" id="logo">
-            <div>
-                <a href="#" class="link-btns">Documentation</a>
-            </div>
-            <p class="copyright">Copyright &copy 2022 StyleFlow Inc. All rights reserved.</p>
-            <div id="footer-links">
-                <a href="#">Privacy Policy</a>
-                <hr>
-                <a href="#">Terms & Conditions</a>
-            </div>
-        </div>
-    </footer>
 
 
 {% endblock %}

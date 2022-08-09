@@ -8,8 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StyleFlow</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'css/base.css' %}">
-    <link rel="stylesheet" href="{% static 'css/header_footer.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">  
 
     {% block css %}
 
@@ -37,11 +36,8 @@
             </div>
         </header>
 
-
             {% block content %}
-            {% endblock %}
-            
-            {% block js_block %}
+
             {% endblock %}
 
         <footer>
@@ -62,6 +58,10 @@
             </div>
         </footer>
     </div>
+
+    {% block js_block %}
+    
+    {% endblock %}
 </body>
 </html>
 
