@@ -19,7 +19,7 @@ html {
 }
 
 body {
-    font-family: Poppins, calibri;
+    font-family: Poppins;
     background-color: #1e1e1e;
 }
 
@@ -71,15 +71,10 @@ body {
 #nav-links a {
     color: var(--greyy);
 }
-#flash-msg {
-    display: absolute;
-    font-size: 0.8rem;
-    font-weight: 700;
-    text-align: center;
-    padding: 0.2rem 0;
-    top: 0;
-}
 
+a#home {
+    color: var(--regular-purple);
+}
 
 #login, #signup {
     width: 6.625rem;
@@ -208,25 +203,24 @@ footer .btn {
     #menu {
         display: none;
         flex-direction: column;
-        position: fixed;
-        padding: 0.625rem 0.4375rem;
+        position: static;
+        padding: 0;
         border-radius: 8px;
         background-color: white;
-        width: 11.75rem;
-        border: 1.5px solid var(--regular-purple);
-        top: 2.7rem;
-        right: 0.5rem;
-        z-index: 999;
+        width: 100%;
     }
+
     #nav-links {
         width: 100%;
     }
     #nav-links a {
-        display: inline-block;
-        font-size: 0.875rem;
+        display: block;
+        font-size: 0.75rem;
         line-height: 1.25rem;
-        font-weight: 600;
+        font-weight: 400;
         /* background-color: var(--regular-purple);I think it's better without the purple background */
+        margin: 0.4rem 0;
+        padding-left: 0.3rem;
     }
     #auth .btn {
         font-size: 0.875rem;
@@ -236,7 +230,8 @@ footer .btn {
     #auth {
         display: flex;
         flex-direction: row;
-        width: 100%;
+        width: 50%;
+        margin-left: 0.3rem;
     }
     #auth .btn {
         margin: 0;
@@ -261,9 +256,17 @@ footer .btn {
 
     #header-top {
         width: 100%;
-        padding: 0 1.25rem 0;
-        height: 2.5rem;
+        padding: 0.6rem 0rem;
+        height: fit-content;
         line-height: 2.5rem;
+        /* position: fixed;
+        top: 0; */
+    }
+    .btn:active {
+        border-width: 0;
+    }
+    #btn-logo {
+        padding: 0.6rem 1.25rem;
         flex-direction: row;
     }
     .flex {
