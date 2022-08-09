@@ -90,6 +90,7 @@ ol{
     top: 20px;
     border-radius: 4px;
     color: white;
+    outline: none;
 }
 
 .center-text{
@@ -125,4 +126,8 @@ ol{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.interactive-button{
+    cursor: pointer;
 }

@@ -1,3 +1,40 @@
+const likeButton = document.querySelectorAll('.interactive-button');
+let yesIcon = document.querySelector('#yesIcon');
+let noIcon = document.querySelector('#noIcon');
+let yesCount = document.querySelector('#yesCount');
+let noCount = document.querySelector('#noCount');
+
+likeButton.forEach(i => {
+    i.addEventListener('click', e => {
+        if (i.textContent.includes('YES')){
+            let clicked = false;
+            if (!clicked){
+                clicked = true;
+                yesIcon.innerHTML = `<i class="fas fa-thumbs-up"></i>`
+                yesCount.textContent++
+            }
+            else{
+                clicked = false;
+                yesIcon.innerHTML = `<i class="far fa-thumbs-up"></i>`
+                yesCount.textContent--
+            }
+            }
+        else{
+            let clicked = false;
+            if (!clicked){
+                clicked = true;
+                noIcon.innerHTML = `<i class="fas fa-thumbs-down"></i>`
+                noCount.textContent++
+            }
+            else{
+                clicked = false;
+                noIcon.innerHTML = `<i class="far fa-thumbs-down"></i>`
+                noCount.textContent--
+        }
+        }
+    })
+})
+
 function moveUpFunc(){
     const screen = document.querySelector('.moveUpScreen')
     valueOfInput = document.getElementById("move-up").value    
@@ -83,6 +120,4 @@ function fadeOutFunc(){
         screen.innerHTML = "I'm the screen"
     } 
 }
-
-
 

@@ -5,6 +5,7 @@
 {% block css %}
 
     <link rel="stylesheet" href="{% static 'css/documentation/documentation.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 
 {% endblock %}
 
@@ -343,8 +344,16 @@
         <p>Was this helpful?</p>
         <ul class="flex yes-no">
             <div class="center-div">
-                <li><button id="yes" class="btn">YES</button></li>
-                <li><button id="no" class="btn">NO</button></li>
+                <li><button id="yes" class="btn interactive-button">
+                    <span id="yesIcon"><i class="far fa-thumbs-up"></i></span>
+                    <span id="yesCount">0</span>
+                    YES
+                </button></li>
+                <li><button id="no" class="btn interactive-button">
+                    <span id="noIcon"><i class="fa-solid fa-thumbs-down"></i></span> 
+                    <span id="noCount">0</span>
+                    NO
+                </button></li>
             </div>
         </ul>
     </div>
