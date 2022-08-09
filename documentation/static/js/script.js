@@ -47,7 +47,6 @@ function moveUpFunc(){
     } 
 }
 
-
 function moveDownFunc(){
     const screen = document.querySelector('.moveDownScreen')
     valueOfInput = document.getElementById("move-down").value 
