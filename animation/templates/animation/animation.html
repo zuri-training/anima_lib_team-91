@@ -1,15 +1,14 @@
-{% extends 'base.html' %}
-
+{% extends 'home/base.html' %}
 {% load static %}
 
-{% block css %}
+{% block head %}
 
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/animation.css' %}">
 
-{% endblock %}
+{% endblock head %}
 
-{% block content %}
+{% block main %}
 
     <section class="sec1">
         <div class="secimg">
@@ -93,10 +92,10 @@
    
     </main>
 
-{% endblock %}
+{% endblock main %}
 
-{% block js_block %}
+{% block script %}
 
     <script type="text/javascript" src="{% static 'js/animation.js' %}"></script>
 
-{% endblock %}
+{% endblock script %}
