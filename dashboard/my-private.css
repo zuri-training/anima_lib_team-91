@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+}
+
+header {
+    height: 11.5vh;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 7%;
+}
+
+.head input {
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    margin: 0 auto;
+    height: 90vh;
+}
+
+aside {
+    border-right: 1px grey solid;
+}
+
+.side {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    color: #B26AD2;
+    color: black;
+    background-color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    /* min-width: 160px; */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background: #D8B5E8;
+    border-radius: 4px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #f9f9f9;
+    ;
+    color: #B26AD2;
+}
+
+
+/* .dropbtn:hover{
+    background: #f9f9f9;
+    color:#B26AD2;
+} */
+
+section {
+    height: 100%;
+}
+
+.photo {
+    width: 26px;
+    height: 26px;
+    background: url("");
+    /* I need to add a url that gets a profile photo*/
+    border-radius: 26px;
+}
+
+.user-drop {
+    background: white;
+    color: #B26AD2;
+    border: none
+}
+
+.user-drop:hover {
+    background: #D8B5E8;
+    border-radius: 4px;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+    /* margin: 15% auto; */
+    margin: 30% auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+li a,
+li button {
+    color: black;
+}
