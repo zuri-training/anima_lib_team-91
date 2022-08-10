@@ -40,12 +40,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # pip installed APPS
-    'crispy_forms',                                 # to custom style the forms
+    # 'crispy_forms',                                 # to custom style the forms
 
     # custom APPS created
     'home.apps.HomeConfig',                         # this is the base app for the website
     'user_auth.apps.UserAuthConfig',                # this APP handles user_authentication
     'documentation.apps.DocumentationConfig',       # app handling documentation
+    'animation.apps.AnimationConfig',
 ]
 
 MIDDLEWARE = [
