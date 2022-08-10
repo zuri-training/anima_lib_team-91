@@ -1,0 +1,212 @@
+    body {
+        margin: 0 5%;
+    }
+    
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 3fr 2fr 0.5fr;
+        gap: 2%;
+        margin: 2% 2% auto 2%;
+    }
+    
+    li {
+        list-style-type: none;
+    }
+    
+    nav li {
+        margin: 0 auto;
+    }
+    
+    .menu a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 0;
+    }
+    
+    .menu-photo {
+        width: 58px;
+        height: 58px;
+        border-radius: 50%;
+    }
+    
+    nav form {
+        margin: 3% auto auto 8%;
+        text-align: center;
+    }
+    
+    main {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        /* margin: auto 5% 10% 5%; */
+    }
+    
+    .side {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+    
+    .dropbtn {
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        color: #B26AD2;
+        color: black;
+        background-color: white;
+    }
+    
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        width: 100%;
+        /* min-width: 160px; */
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover {
+        background: #D8B5E8;
+        border-radius: 4px;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown:hover .dropbtn {
+        background-color: #f9f9f9;
+        ;
+        color: #B26AD2;
+    }
+    
+    section {
+        height: 100%;
+    }
+    
+    .dropdown-photo {
+        width: 26px;
+        height: 26px;
+        background: url("");
+        /* I need to add a url that gets a profile photo*/
+        border-radius: 50%;
+    }
+    
+    .user-drop {
+        background: white;
+        color: #B26AD2;
+        border: none
+    }
+    
+    .user-drop:hover {
+        background: #D8B5E8;
+        border-radius: 4px;
+        color: white;
+    }
+    
+    li {
+        list-style-type: none;
+        /* margin: 15% auto; */
+        margin: 15% auto;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    li a,
+    li button {
+        color: black;
+    }
+    
+    .upper-line {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .pub-anim {
+        margin-left: 20%;
+    }
+    
+    .likes {
+        margin-left: -2%;
+    }
+    
+    section {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        margin: auto 10%;
+    }
+    
+    .btn-col2 {
+        background: #B26AD2;
+        font: poppins;
+        padding: 1%;
+    }
+    
+    .lower {
+        font-weight: normal;
+    }
+    
+    p {
+        font-size: 0.9em;
+    }
+    
+    button {
+        background: #E8D2F1;
+        border-style: none;
+        padding: 1%;
+        color: black;
+    }
+    
+    .name-text {
+        border-style: none;
+    }
+    
+    .mid-col {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        margin: 10% 10%;
+    }
+    
+    .lower,
+    p {
+        font-weight: smaller;
+        margin-left: -20%;
+    }
+    
+    p {
+        font-size: 0.9em;
+    }
+    
+    .left-col {
+        margin-top: 52%;
+    }
+    
+    .dropdown button {
+        margin: 5% auto;
+    }
+    
+    .left-photo {
+        height: 171px;
+        width: 171px;
+        border-radius: 50%;
+    }

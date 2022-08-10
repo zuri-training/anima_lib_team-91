@@ -39,11 +39,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # pip installed APPS
+    'crispy_forms',                                 # to custom style the forms
+
     # custom APPS created
-    'home.apps.HomeConfig',     #this is the base app for the website
-    'user_auth.apps.UserAuthConfig',    # this APP handles user_authentication
-    'documentation', #app handling documentation
-    'animation', #app handling animation
+    'home.apps.HomeConfig',                         # this is the base app for the website
+    'user_auth.apps.UserAuthConfig',                # this APP handles user_authentication
+    'documentation.apps.DocumentationConfig',       # app handling documentation
 ]
 
 MIDDLEWARE = [
@@ -131,3 +133,10 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# CRISPY FORM
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+# Login redirect url
+LOGIN_REDIRECT_URL = 'home:home'
