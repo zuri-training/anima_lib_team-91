@@ -1,5 +1,5 @@
 from django.shortcuts import render
 
 # Create your views here.
-def testAnimation(request):
-    return render(request, 'animation/index.html')
+def display_animation(request):
+    return render(request, 'animation/animation.html')

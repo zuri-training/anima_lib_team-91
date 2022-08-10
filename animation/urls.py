@@ -6,5 +6,5 @@ from . import views
 app_name = "animation"
 
 urlpatterns = [
-    path('', views.testAnimation, name='animation')   
+    path('', views.display_animation, name='animation')   
 ]
