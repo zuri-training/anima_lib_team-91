@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     # custom APPS created
     'home.apps.HomeConfig',                         # this is the base app for the website
     'user_auth.apps.UserAuthConfig',                # this APP handles user_authentication
-    'documentation',                                # app handling documentation
+    'documentation.apps.DocumentationConfig',       # app handling documentation
 ]
 
 MIDDLEWARE = [
