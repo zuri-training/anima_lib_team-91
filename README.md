@@ -1,0 +1,2 @@
+# Animlib 
+This was my contribution to the project, the name of the origin folder is different from our final project name because i did the work before we decided on the project name. I collaborated with a team member on the documentation, that is why my own code is half completed.
