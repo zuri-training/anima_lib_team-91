@@ -103,9 +103,9 @@ def signup(request):
         if form.is_valid():
             form.save()
             username = form.cleaned_data.get('username')
-            messages.success(request, f"Your account have been created successfully. You can login now.")
+            messages.success(request, f"Account has been created for {username} successfully. You can login now.")
             return redirect(reverse('user_auth:signin'))
     else:
         form = SignupUserForm()
-    return render(request, 'user_auth/signup.html', {'form': form})
+    return render(request, 'user_auth/signup.html', {'form': form, 'title': "Create Account"})
     

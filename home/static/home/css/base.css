@@ -2,7 +2,7 @@
 
 
 :root {
-    --regular-purple: #8b20bb;
+    --regular-purple: hsl(281, 71%, 43%);
     --bg-color: hsla(0, 0%, 100%, 1);
     --greyy: hsla(0, 0%, 50%, 1);
 }
@@ -20,7 +20,7 @@ html {
 
 body {
     font-family: Poppins;
-    background-color: #1e1e1e;
+    background-color: var(--bg-color);
 }
 
 #wrapper {
