@@ -2,6 +2,7 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 
+
 body{   
     margin: 0%;
 }
@@ -259,5 +260,15 @@ ol{
   }
   100% {
     opacity: 0;
+  }
+}
+
+
+@media screen and (max-width: 1512px) {
+  html {
+      font-size: 1.5873015873015872vw;
+  }
+  #wrapper {
+      width: 100%;
   }
 }

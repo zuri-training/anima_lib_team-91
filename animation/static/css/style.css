@@ -53,6 +53,7 @@ main{
     display: flex;
     justify-content: center;
     /* align-items: center; */
+    border: 1px dotted blue;
 }
 
 .sticky{
@@ -67,10 +68,12 @@ main{
 .secimg{
     margin-top: -5.5em;
     border-top: 7em solid #fff;
+    border: 1px dotted #fff;
     background-color:#fff;
     z-index: 1;
     position: fixed;
     width: 100%;
+    padding: 2em;
 }
 .animate-img img{
     width: 15%;
