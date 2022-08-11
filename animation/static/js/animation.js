@@ -1,3 +1,13 @@
+window.addEventListener('scroll', () => {
+  const secimg = document.querySelector('.sec1');
+  if (window.scrollY > 0){
+    secimg.classList.add('sticky', window.scrollY > 0);
+  }
+  else{
+    secimg.classList.remove('sticky', window.scrollY > 0);
+  }
+});
+
 const img = document.querySelector('.img');
 
 const move_up = document.querySelector('.move_up');
@@ -133,7 +143,3 @@ zoom_out.addEventListener("click", ()=>{
 zoom_in.addEventListener("click", ()=>{
   img.classList.toggle('zom-in');
 });
-
-function showNav(){
-  document.querySelector('.nav').style.display = 'block';
-}
