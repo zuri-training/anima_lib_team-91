@@ -60,6 +60,16 @@ table, th, td{
     margin-right: 4px;
 }
 
+.anime-card{
+    width: 30%;
+}
+
+.anime-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .input{
     width: 50%;
 }
@@ -117,7 +127,7 @@ ol{
 .center-div{
     width: 13.916666666666666rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;    
     position: relative;
 
 }
@@ -130,4 +140,124 @@ ol{
 
 .interactive-button{
     cursor: pointer;
+}
+
+.move-up{
+    animation-name: move-up;
+    animation-duration: 4s;
+}
+
+@keyframes move-up {
+  70% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.move-down {
+  animation-name: move-down;
+  animation-duration: 4s;
+}
+
+@keyframes move-down {
+   70% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.move-left{
+    animation-name: move-left;
+    animation-duration: 4s;
+}
+
+@keyframes move-left {
+  70% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.move-right{
+    animation-name: move-right;
+    animation-duration: 4s;
+}
+
+@keyframes move-right {
+  70% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.bounce{
+    animation-name: bounce;
+    animation-duration: 4s;
+}
+
+@keyframes bounce {
+  from, 20%, 53%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+  40%, 43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -30px, 0) scaleY(1.1);
+  }
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0) scaleY(1.05);
+  }
+  80% {
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0) scaleY(0.95);
+  }
+  90% {
+    transform: translate3d(0, -4px, 0) scaleY(1.02);
+  }
+}
+
+.fade-in{
+    animation-name: fade-in;
+    animation-duration: 4s;
+}
+
+@keyframes fade-in {
+  50% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-out{
+    animation-name: fade-out;
+    animation-duration: 4s;
+}
+
+@keyframes fade-out {
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
 }
