@@ -43,7 +43,7 @@ function moveUpFunc(){
     }
 
     else{
-        screen.classList.add('move-up');
+        screen.classList.toggle('move-up');
     } 
 }
 
@@ -55,7 +55,7 @@ function moveDownFunc(){
         screen.innerHTML = screen.innerHTML = "Not the correct code, ensure exact spacing compliance."  
     }
     else{
-        screen.classList.add('move-down')
+        screen.classList.toggle('move-down')
     } 
 }
 
@@ -68,7 +68,7 @@ function moveLeftFunc(){
         screen.innerHTML = screen.innerHTML = "Not the correct code, ensure exact spacing compliance."  
     }
     else{
-        screen.classList.add('move-left')
+        screen.classList.toggle('move-left')
     } 
 }
 
@@ -80,7 +80,7 @@ function bounceFunc(){
         screen.innerHTML = screen.innerHTML = "Not the correct code, ensure exact spacing compliance."  
     }
     else{
-        screen.classList.add('bounce');
+        screen.classList.toggle('bounce');
     } 
 }
 
@@ -92,7 +92,7 @@ function moveRightFunc(){
         screen.innerHTML = screen.innerHTML = "Not the correct code, ensure exact spacing compliance."  
     }
     else{
-        screen.classList.add('move-right')
+        screen.classList.toggle('move-right')
     } 
 }
 
@@ -104,7 +104,7 @@ function fadeInFunc(){
             screen.innerHTML = screen.innerHTML = "Not the correct code, ensure exact spacing compliance."  
         }
         else{
-            screen.classList.add('fade-in')
+            screen.classList.toggle('fade-in')
         } 
 }
 
@@ -116,7 +116,7 @@ function fadeOutFunc(){
         screen.innerHTML = screen.innerHTML = "Not the correct code, ensure exact spacing compliance."  
     }
     else{
-        screen.classList.add('fade-out')
+        screen.classList.toggle('fade-out')
     } 
 }
 

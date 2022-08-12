@@ -121,6 +121,34 @@ section h4{
     color: #fff;
 }
 
+.download-div{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #8B20BB;
+    flex-direction: column;
+    padding: 2.5em;
+    text-align: center;
+}
+
+.download-btn{
+    display: flex;
+    justify-content: center;    
+    background-color: #8B20BB;
+    color: #fff;
+    padding: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: fit-content;
+    position: relative;
+    left: 39%;
+    border-radius: 0.25em;
+    margin-top: 1em;
+}
+
+.download-btn button a{
+    text-decoration: none;
+}
+
 @media (min-width:700px) {
     
 }
