@@ -42,7 +42,7 @@ INSTALLED_APPS = [
 
     # pip installed APPS
     'crispy_forms',                                 # to custom style the forms
-    # 'widget_tweaks',                                # to customize the forms
+    'widget_tweaks',                                # to customize the forms
 
     # custom APPS created
     'home.apps.HomeConfig',                         # this is the base app for the website

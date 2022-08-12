@@ -124,19 +124,25 @@ section h4{
 .download-div{
     display: flex;
     justify-content: center;
-    border-top: 1px solid var(--regular-purple);
+    border-top: 1px solid #8B20BB;
     flex-direction: column;
     padding: 2.5em;
     text-align: center;
 }
 
 .download-btn{
-    /* padding-top: 0.2em; */
-    background-color: #8B20BB;
-    border: none;
-    color: #fff;
     display: flex;
-    justify-content: center;
+    justify-content: center;    
+    background-color: #8B20BB;
+    color: #fff;
+    padding: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: fit-content;
+    position: relative;
+    left: 39%;
+    border-radius: 0.25em;
+    margin-top: 1em;
 }
 
 .download-btn button a{
