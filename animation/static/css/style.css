@@ -118,6 +118,28 @@ section h4{
     color: #fff;
 }
 
+.download-div{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid var(--regular-purple);
+    flex-direction: column;
+    padding: 2.5em;
+    text-align: center;
+}
+
+.download-btn{
+    /* padding-top: 0.2em; */
+    background-color: #8B20BB;
+    border: none;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.download-btn button a{
+    text-decoration: none;
+}
+
 @media (min-width:700px) {
     
 }
