@@ -39,7 +39,7 @@
                     </ul>
                     <ul id="auth" class="flex">
                         {% if user.is_authenticated %}
-                            <li><a href="{% static 'css/styleFlow.css' %}" download><button id="signup" class="btn beat">Download</button></a></li>
+                            <li><a href="{% static 'css/styleflow.zip' %}" download><button id="signup" class="btn beat">Download</button></a></li>
                             <li><a href="{% url 'user_auth:signout' %}"><button id="login" class="btn">Sign out</button></a></li>
                         {% else %}
                             <li><a href="{% url 'user_auth:signin' %}"><button id="login" class="btn">Login</button></a></li>
