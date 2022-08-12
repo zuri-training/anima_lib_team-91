@@ -62,7 +62,9 @@ table, th, td{
 }
 
 .anime-card{
-    width: 30%;
+    /* width: 30%; */
+    width: 5em;
+    height: auto;
 }
 
 .anime-div{
@@ -102,6 +104,9 @@ ol{
     border-radius: 4px;
     color: white;
     outline: none;
+}
+a#documentation {
+  color: hsl(281, 71%, 43%);
 }
 
 .center-text{
@@ -260,15 +265,5 @@ ol{
   }
   100% {
     opacity: 0;
-  }
-}
-
-
-@media screen and (max-width: 1512px) {
-  html {
-      font-size: 1.5873015873015872vw;
-  }
-  #wrapper {
-      width: 100%;
   }
 }

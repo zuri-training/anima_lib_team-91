@@ -45,6 +45,9 @@ main{
     /* align-items: center; */
     /* height: 100vh; */
 }
+a#animation {
+    color: hsl(281, 71%, 43%);
+}
 
 .sec1{
     position: relative;

@@ -40,6 +40,9 @@ li {
     margin: 0;
     list-style-type: none;
 }
+a#home {
+    color: hsl(281, 71%, 43%);
+}
 
 .flex {
     display: flex;
