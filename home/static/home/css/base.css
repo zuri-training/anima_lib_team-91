@@ -72,9 +72,6 @@ body {
     color: var(--greyy);
 }
 
-a#home {
-    color: var(--regular-purple);
-}
 
 #login, #signup {
     width: 6.625rem;

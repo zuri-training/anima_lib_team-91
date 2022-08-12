@@ -9,7 +9,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'user_auth/css/sign_in_out.css' %}">
+<<<<<<< HEAD
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"> -->
+=======
+>>>>>>> 42b774f729189a46ab36a713cf1c48fc4f06f04a
     <link rel="shortcut icon" href="{% static 'home/images/logos/favicon.ico' %}" type="image/x-icon">
 
 
@@ -54,26 +57,56 @@
                             <legend>First Name</legend>
                             {% render_field form.first_name class="inpt-field" placeholder="John" type="text" %}
                         </fieldset>
+                        {% for error in form.non_field_errors %}
+                            {% if error %}
+                            <p id="err-msg" class="small">{{ form.error }}</p>
+                            {% endif %}
+                        {% endfor %}
                         <fieldset class="form-input">
                             <legend>Last Name</legend>
                             {% render_field form.last_name class="inpt-field" placeholder="Smith" type="text" %}
                         </fieldset>
+                        {% for error in form.non_field_errors %}
+                            {% if error %}
+                            <p id="err-msg" class="small">{{ form.error }}</p>
+                            {% endif %}
+                        {% endfor %}
                         <fieldset class="form-input">
                             <legend>Username</legend>
                             {% render_field form.username class="inpt-field" placeholder="j_smith007" type="text" %}
                         </fieldset>
+                        {% for error in form.non_field_errors %}
+                            {% if error %}
+                            <p id="err-msg" class="small">{{ form.error }}</p>
+                            {% endif %}
+                        {% endfor %}
                         <fieldset class="form-input">
                             <legend>Email</legend>
                             {% render_field form.email class="inpt-field" placeholder="johnsmith123@gmail.com" type="email" %}
                         </fieldset>
+                        {% for error in form.non_field_errors %}
+                            {% if error %}
+                            {% endif %}
+                            {% endfor %}
+                            <p id="err-msg" class="small">{{ form.error }}</p>
                         <fieldset class="form-input">
                             <legend>Password</legend>
                             {% render_field form.password1 class="inpt-field" placeholder="*******" type="password" %}
                         </fieldset>
+                        {% for error in form.non_field_errors %}
+                            {% if error %}
+                            <p id="err-msg" class="small">{{ form.error }}</p>
+                            {% endif %}
+                        {% endfor %}
                         <fieldset class="form-input">
                             <legend>Confirm Password</legend>
                             {% render_field form.password2 class="inpt-field" placeholder="*******" type="password" %}
                         </fieldset>
+                        {% for error in form.non_field_errors %}
+                            {% if error %}
+                            <p id="err-msg" class="small">{{ form.error }}</p>
+                            {% endif %}
+                        {% endfor %}
 
                         <input type="submit" id="submit-btn" value="Create account">
                     </form>

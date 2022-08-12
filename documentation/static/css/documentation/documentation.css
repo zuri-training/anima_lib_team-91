@@ -62,7 +62,9 @@ table, th, td{
 }
 
 .anime-card{
-    width: 30%;
+    /* width: 30%; */
+    width: 5em;
+    height: auto;
 }
 
 .anime-div{
@@ -102,6 +104,9 @@ ol{
     border-radius: 4px;
     color: white;
     outline: none;
+}
+a#documentation {
+  color: hsl(281, 71%, 43%);
 }
 
 .center-text{
@@ -347,6 +352,7 @@ ol{
     opacity: 0;
   }
 }
+<<<<<<< HEAD
 
 
 @media screen and (max-width: 1512px) {
@@ -369,3 +375,5 @@ ol{
       text-align: center;
   }
 } */
+=======
+>>>>>>> 42b774f729189a46ab36a713cf1c48fc4f06f04a
