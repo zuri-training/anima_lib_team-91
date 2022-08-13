@@ -3,6 +3,11 @@ let yesIcon = document.querySelector('#yesIcon');
 let noIcon = document.querySelector('#noIcon');
 let yesCount = document.querySelector('#yesCount');
 let noCount = document.querySelector('#noCount');
+const leftDiv = document.querySelector('.left')
+
+if (screen.availWidth < 960){
+    leftDiv.innerHTML = ""
+}
 
 likeButton.forEach(i => {
     i.addEventListener('click', e => {
@@ -36,87 +41,87 @@ likeButton.forEach(i => {
 })
 
 function moveUpFunc(){
-    const screen = document.querySelector('.moveUpScreen')
-    valueOfInput = document.getElementById("move-up").value    
+    const screen = document.querySelector('.moveUpScreen'),
+          valueOfInput = document.getElementById("move-up").value;   
     if (!valueOfInput || valueOfInput !== 'class = "move-up"'){
         screen.innerHTML = screen.innerHTML = "Not the correct code, ensure exact spacing compliance."   
     }
-
+    
     else{
-        screen.innerHTML = "I'm the screen"
+        screen.classList.toggle('move-up');
     } 
 }
 
 function moveDownFunc(){
-    const screen = document.querySelector('.moveDownScreen')
-    valueOfInput = document.getElementById("move-down").value 
+    const screen = document.querySelector('.moveDownScreen'),
+          valueOfInput = document.getElementById("move-down").value; 
 
     if (!valueOfInput || valueOfInput !== 'class = "move-down"'){
         screen.innerHTML = screen.innerHTML = "Not the correct code, ensure exact spacing compliance."  
     }
     else{
-        screen.innerHTML = "I'm the screen"
+        screen.classList.toggle('move-down')
     } 
 }
 
 
 function moveLeftFunc(){
-    const screen = document.querySelector('.moveLeftScreen')
-    valueOfInput = document.getElementById("move-left").value 
+    const screen = document.querySelector('.moveLeftScreen'),
+          valueOfInput = document.getElementById("move-left").value; 
 
     if (!valueOfInput || valueOfInput !== 'class = "move-left"'){
         screen.innerHTML = screen.innerHTML = "Not the correct code, ensure exact spacing compliance."  
     }
     else{
-        screen.innerHTML = "I'm the screen"
+        screen.classList.toggle('move-left')
     } 
 }
 
 function bounceFunc(){
-    const screen = document.querySelector('.bounceScreen')
-    valueOfInput = document.getElementById("bounce").value 
+    const screen = document.querySelector('.bounceScreen'),
+          valueOfInput = document.getElementById("bounce").value; 
 
     if (!valueOfInput || valueOfInput !== 'class = "bounce"'){
         screen.innerHTML = screen.innerHTML = "Not the correct code, ensure exact spacing compliance."  
     }
     else{
-        screen.innerHTML = "I'm the screen"
+        screen.classList.toggle('bounce');
     } 
 }
 
 function moveRightFunc(){
-    const screen = document.querySelector('.moveRightScreen')
-    valueOfInput = document.getElementById("move-right").value 
+    const screen = document.querySelector('.moveRightScreen'),
+          valueOfInput = document.getElementById("move-right").value; 
 
     if (!valueOfInput || valueOfInput !== 'class = "move-right"'){
         screen.innerHTML = screen.innerHTML = "Not the correct code, ensure exact spacing compliance."  
     }
     else{
-        screen.innerHTML = "I'm the screen"
+        screen.classList.toggle('move-right')
     } 
 }
 
 function fadeInFunc(){
-    const screen = document.querySelector('.fadeInScreen')
-    valueOfInput = document.getElementById("fade-in").value 
+    const screen = document.querySelector('.fadeInScreen'),
+          valueOfInput = document.getElementById("fade-in").value     
 
-    if (!valueOfInput || valueOfInput !== 'class = "fade-in"'){
-        screen.innerHTML = screen.innerHTML = "Not the correct code, ensure exact spacing compliance."  
-    }
-    else{
-        screen.innerHTML = "I'm the screen"
-    } 
+        if (!valueOfInput || valueOfInput !== 'class = "fade-in"'){
+            screen.innerHTML = screen.innerHTML = "Not the correct code, ensure exact spacing compliance."  
+        }
+        else{
+            screen.classList.toggle('fade-in')
+        } 
 }
 
 function fadeOutFunc(){
-    const screen = document.querySelector('.fadeOutScreen')
-    valueOfInput = document.getElementById("fade-out").value 
+    const screen = document.querySelector('.fadeOutScreen'),
+          valueOfInput = document.getElementById("fade-out").value 
 
     if (!valueOfInput || valueOfInput !== 'class = "fade-out"'){
         screen.innerHTML = screen.innerHTML = "Not the correct code, ensure exact spacing compliance."  
     }
     else{
-        screen.innerHTML = "I'm the screen"
+        screen.classList.toggle('fade-out')
     } 
 }
 

@@ -1,23 +1,24 @@
 {% extends 'home/base.html' %}
+
 {% load static %}
 
 {% block head %}
 
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'css/animation.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styleFlow.css' %}">
 
 {% endblock head %}
 
 {% block main %}
 
-    <section class="sec1">
-        <div class="secimg">
-            <div class="animate-img">
-                <img src="{% static 'images/Animation Card with Logo for Animation Page.png' %}" alt="styleflow-logo-black" class="img">
-            </div>
+<section class="sec1">
+    <div class="secimg">
+        <div class="animate-img">
+            <img src="{% static 'images/Animation Card with Logo for Animation Page.png' %}" alt="styleflow-logo-black" class="img">
         </div>
-    </section>
-    <main>
+    </div>
+</section>
+<main>
         <div class="dprow1">
         <section class="sec2">
             <article>
@@ -89,8 +90,12 @@
                 <button class="zoom_in anime-button">Zoom In</button>
             </article>
         </section>
-   
+        
     </main>
+    <div class="download-div">
+        <p>Click Button Below To Download Library</p>      
+        <a href="{% static 'css/styleflow.zip' %}" class="download-btn" download>Download library</a>
+    </div>
 
 {% endblock main %}
 

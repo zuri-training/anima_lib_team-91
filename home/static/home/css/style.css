@@ -14,16 +14,6 @@
     box-sizing: border-box;
 }
 
-html {
-    font-size: 24px;
-}
-
-body {
-    font-family: Poppins;
-    background-color: #1e1e1e;
-    /* background-color: var(--bg-color); */
-}
-
 #wrapper {
     background-color: var(--bg-color);
     width: 63rem;
@@ -39,6 +29,9 @@ li {
     padding: 0;
     margin: 0;
     list-style-type: none;
+}
+a#home {
+    color: hsl(281, 71%, 43%);
 }
 
 .flex {

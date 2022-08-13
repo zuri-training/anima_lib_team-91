@@ -1,21 +1,15 @@
-{% extends 'base.html' %}
-
+{% extends 'home/base.html' %}
 {% load static %}
 
-{% block css %}
 
+{% block head %}
     <link rel="stylesheet" href="{% static 'css/documentation/documentation.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+{% endblock head %}
 
-{% endblock %}
-
-{% block content %}
+{% block main %}
 
     <div class="wrapper">
-        
-        <div class="outer-side">
-            <!-- outer side space -->
-        </div>
 
         <div class="left">
             <h3><a href="#introduction">INTRODUCTION</a></h3>
@@ -40,7 +34,7 @@
                     <!-- <hr class="horizontal-line"> -->
                     <h3 class="center-text">TUTORIAL</h3>
                     <h4>Animate a string to move-up:</h4>
-                    <p>Add the class "move-up" to the h1 tag to animate the enclosed string</p>
+                    <p>Add the class "move-up" to the h1 tag to animate the logo-card</p>
                     <table class="terminal">
                         <tr>
                             <th>Input</th>
@@ -52,13 +46,16 @@
                                 <span>
                                     &lt;h1
                                     <input type="text" value='class = "move-up"' id="move-up" size="12">
-                                    &gt; I just moved up &lt;&#x2215;h1&gt;
+                                    &gt; Logo-card, please move-up &lt;&#x2215;h1&gt;
                                 </span>
                                 <p>&lt;!-- enter class above --&gt;</p>
 
                                 <button onclick="moveUpFunc()" class="button"><h4>RUN</h4></button> 
                             </td>
-                            <td class="moveUpScreen">
+                            <td class="output">
+                                <div class="anime-div">
+                                    <img src="{% static 'images/card.png' %}" alt="animation-card" class="anime-card moveUpScreen">
+                                </div>                               
                                 <!-- screen will display code result -->
                             </td>
                         </tr>
@@ -67,7 +64,7 @@
 
                 <section>        
                     <h4>Animate a string to move-down:</h4>
-                    <p>Add the class "move-down" to the h1 tag to animate the enclosed string</p>
+                    <p>Add the class "move-down" to the h1 tag to animate the logo-card</p>
 
                     <table class="terminal">
                         <tr>
@@ -80,12 +77,15 @@
                                 <span>
                                     &lt;h1
                                     <input type="text" value='class = "move-down"' id="move-down" size="15">
-                                    &gt; I just moved move-down &lt;&#x2215;h1&gt;
+                                    &gt; Logo-card, please move-down &lt;&#x2215;h1&gt;
                                 </span>
                                 <p>&lt;!-- enter class above --&gt;</p>
                                 <button onclick="moveDownFunc()" class="button"><h4>RUN</h4></button> 
                             </td>
-                            <td class="moveDownScreen">
+                            <td>
+                                <div class="anime-div">
+                                    <img src="{% static 'images/card.png' %}" alt="animation-card" class="anime-card moveDownScreen">
+                                </div> 
                                 <!-- screen will display code result -->
                             </td>
                         </tr>
@@ -95,7 +95,7 @@
 
                 <section>        
                     <h4>Animate a string to move-left:</h4>
-                    <p>Add the class "move-left" to the h1 tag to animate the enclosed string</p>
+                    <p>Add the class "move-left" to the h1 tag to animate the logo-card</p>
 
                     <table class="terminal">
                         <tr>
@@ -108,12 +108,15 @@
                                 <span>
                                     &lt;h1
                                     <input type="text" value='class = "move-left"' id="move-left" size="15">
-                                    &gt; I just moved move-down &lt;&#x2215;h1&gt;
+                                    &gt; Logo-card, please move-left &lt;&#x2215;h1&gt;
                                 </span>
                                 <p>&lt;!-- enter class above --&gt;</p>
                                 <button onclick="moveLeftFunc()" class="button"><h4>RUN</h4></button> 
                             </td>
-                            <td class="moveLeftScreen">
+                            <td>
+                                <div class="anime-div">
+                                    <img src="{% static 'images/card.png' %}" alt="animation-card" class="anime-card moveLeftScreen">
+                                </div> 
                                 <!-- screen will display code result -->
                             </td>
                         </tr>
@@ -123,7 +126,7 @@
 
                 <section>        
                     <h4>Animate a string to move-right:</h4>
-                    <p>Add the class "move-right" to the h1 tag to animate the enclosed string</p>
+                    <p>Add the class "move-right" to the h1 tag to animate the logo-card</p>
 
                     <table class="terminal">
                         <tr>
@@ -136,12 +139,15 @@
                                 <span>
                                     &lt;h1
                                     <input type="text" value='class = "move-right"' id="move-right" size="15">
-                                    &gt; I just moved move-down &lt;&#x2215;h1&gt;
+                                    &gt; Logo-card, please move-right &lt;&#x2215;h1&gt;
                                 </span>
                                 <p>&lt;!-- enter class above --&gt;</p>
                                 <button onclick="moveRightFunc()" class="button"><h4>RUN</h4></button> 
                             </td>
-                            <td class="moveRightScreen">
+                            <td>
+                                <div class="anime-div">
+                                    <img src="{% static 'images/card.png' %}" alt="animation-card" class="anime-card moveRightScreen">
+                                </div> 
                                 <!-- screen will display code result -->
                             </td>
                         </tr>
@@ -151,7 +157,7 @@
 
                 <section>        
                     <h4>Animate a string to fade-in:</h4>
-                    <p>Add the class "fade-in" to the h1 tag to animate the enclosed string</p>
+                    <p>Add the class "fade-in" to the h1 tag to animate the logo-card</p>
 
                     <table class="terminal">
                         <tr>
@@ -164,12 +170,15 @@
                                 <span>
                                     &lt;h1
                                     <input type="text" value='class = "fade-in"' id="fade-in" size="15">
-                                    &gt; I just moved move-down &lt;&#x2215;h1&gt;
+                                    &gt; Logo-card, please fade-in &lt;&#x2215;h1&gt;
                                 </span>
                                 <p>&lt;!-- enter class above --&gt;</p>
                                 <button onclick="fadeInFunc()" class="button"><h4>RUN</h4></button> 
                             </td>
-                            <td class="fadeInScreen">
+                            <td>
+                                <div class="anime-div">
+                                    <img src="{% static 'images/card.png' %}" alt="animation-card" class="anime-card fadeInScreen">
+                                </div> 
                                 <!-- screen will display code result -->
                             </td>
                         </tr>
@@ -179,7 +188,7 @@
 
                 <section>        
                     <h4>Animate a string to fade-out:</h4>
-                    <p>Add the class "fade-out" to the h1 tag to animate the enclosed string</p>
+                    <p>Add the class "fade-out" to the h1 tag to animate the logo-card</p>
 
                     <table class="terminal">
                         <tr>
@@ -192,12 +201,15 @@
                                 <span>
                                     &lt;h1
                                     <input type="text" value='class = "fade-out"' id="fade-out" size="15">
-                                    &gt; I just moved move-down &lt;&#x2215;h1&gt;
+                                    &gt; Logo-card, please fade-out &lt;&#x2215;h1&gt;
                                 </span>
                                 <p>&lt;!-- enter class above --&gt;</p>
                                 <button onclick="fadeOutFunc()" class="button"><h4>RUN</h4></button> 
                             </td>
-                            <td class="fadeOutScreen">
+                            <td>
+                                <div class="anime-div">
+                                    <img src="{% static 'images/card.png' %}" alt="animation-card" class="anime-card fadeOutScreen">
+                                </div> 
                                 <!-- screen will display code result -->
                             </td>
                         </tr>
@@ -207,7 +219,7 @@
 
                 <section>        
                     <h4>Animate a string to bounce:</h4>
-                    <p>Add the class "bounce" to the h1 tag to animate the enclosed string</p>
+                    <p>Add the class "bounce" to the h1 tag to animate the logo-card</p>
 
                     <table class="terminal">
                         <tr>
@@ -220,12 +232,15 @@
                                 <span>
                                     &lt;h1
                                     <input type="text" value='class = "bounce"' id="bounce" size="15">
-                                    &gt; I just moved move-down &lt;&#x2215;h1&gt;
+                                    &gt; Logo-card, please bounce &lt;&#x2215;h1&gt;
                                 </span>
                                 <p>&lt;!-- enter class above --&gt;</p>
                                 <button onclick="bounceFunc()" class="button"><h4>RUN</h4></button> 
                             </td>
-                            <td class="bounceScreen">
+                            <td>
+                                <div class="anime-div">
+                                    <img src="{% static 'images/card.png' %}" alt="animation-card" class="anime-card bounceScreen">
+                                </div> 
                                 <!-- screen will display code result -->
                             </td>
                         </tr>
@@ -335,9 +350,6 @@
 
         </div>
         
-        <div class="outer-side">
-            <!-- outer side space -->
-        </div>
     </div>
 
     <div class="interaction-box center-text">
@@ -359,9 +371,9 @@
     </div>
 
 
-{% endblock %}
+{% endblock main %}
 
-{% block js_block %}
+{% block script %}
 
     <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
 

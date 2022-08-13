@@ -8,6 +8,7 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
+
 """
 
 import os
@@ -41,6 +42,7 @@ INSTALLED_APPS = [
 
     # pip installed APPS
     'crispy_forms',                                 # to custom style the forms
+    'widget_tweaks',                                # to customize the forms
 
     # custom APPS created
     'home.apps.HomeConfig',                         # this is the base app for the website

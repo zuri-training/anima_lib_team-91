@@ -2,7 +2,7 @@
 
 
 :root {
-    --regular-purple: #8b20bb;
+    --regular-purple: hsl(281, 71%, 43%);
     --bg-color: hsla(0, 0%, 100%, 1);
     --greyy: hsla(0, 0%, 50%, 1);
 }
@@ -19,14 +19,32 @@ html {
 }
 
 body {
-    font-family: Poppins;
-    background-color: #1e1e1e;
+    font-family: Poppins, calibri;
+    /* background-color: var(--bg-color); */
+    background-color: rgba(232, 210, 241, 0.4);
+
 }
 
 #wrapper {
     background-color: var(--bg-color);
     width: 63rem;
     margin: auto;
+}
+.alert {
+    width: 100%;
+    line-height: 2rem;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.alert-success {
+    background-color: lightgreen;
+}
+.alert-error {
+    background-color: lightpink;
+}
+.alert-warning {
+    background-color: rgb(255, 255, 208);
 }
 #menu {
     display: block;
@@ -72,9 +90,6 @@ body {
     color: var(--greyy);
 }
 
-a#home {
-    color: var(--regular-purple);
-}
 
 #login, #signup {
     width: 6.625rem;

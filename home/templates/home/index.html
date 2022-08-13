@@ -1,33 +1,10 @@
 {% extends 'home/base.html' %}
 {% load static %}
 
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'home/style.css' %}">
-    <title>StyleFlow</title>
-</head>
-<body>
-    <div id="wrapper">
-        <header>
-            <div id="header-top" class="flex">
-                <img src="{% static 'home/images/logos/styleFlow_header_logo_vector.png' %}" alt="StyleFlow logo" id="logo">
-                <ul id="nav-links" class="flex">
-                    <li><a href="#" id="home">Home</a></li>
-                    <li><a href="{% url 'animation:animation' %}">Animation</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="{% url 'documentation:documentation' %}">Documentation</a></li>
-                </ul>
-=======
 
 {% block head %}
 <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
 {% endblock head %}
->>>>>>> 29256d517efc647b76a8c5494b061e315846da0a
 
 
 {% block header_bottom %}
@@ -39,7 +16,11 @@
             <p>
                 Sign up to get full access to the tools needed to customize, edit, and add animations to your projects.
             </p>
+            {% if user.is_authenticated %}
+            <a href="{% url 'documentation:documentation' %}"><button class="btn">Get Started</button></a>
+            {% else %}
             <a href="{% url 'user_auth:signup' %}"><button class="btn">Get Started</button></a>
+            {% endif %}
         </div>
         <img src="{% static 'home/images/landing_page_fun_and_interactive.gif' %}" alt="A man typing and his dog" id="typin-dood">
     </div>
@@ -94,10 +75,14 @@
             <p>
                 Explore the world's largest pool of ready-to-use, free animations and express yourself in a more fun and exciting way.
             </p>
+            {% if user.is_authenticated %}
+            <a href="{% url 'documentation:documentation' %}"><button class="btn">Tutorial</button></a>
+            {% else %}
             <a href="{% url 'user_auth:signup' %}"><button class="btn">Get Started</button></a>
+            {% endif %}
         </div>
         
-        <div id="about-us">
+        <div id="about_us">
             <h2 class="title txt-center">
                 About Us
             </h2>
@@ -159,12 +144,12 @@
                         </p>
                     </div>
                     <div class="profile">
-                        <img src="{% static 'home/images/profile_pic.jpg' %}" alt="User Image" class="user-img">
+                        <img src="{% static 'home/images/pic2.jpg' %}" alt="User Image" class="user-img">
                         <h6 class="user-name">
-                            Nicole Samuel
+                            Winner Priest
                         </h6>
                         <p class="user-mail">
-                            @nicole.sam
+                            @priest_mf
                         </p>
                     </div>
                 </div>
@@ -195,7 +180,9 @@
                 <h4 class="title">
                     Step up your animation game with StyleFlow
                 </h4>
+                {% if not user.is_authenticated %}
                 <a href="{% url 'user_auth:signup' %}"><button class="btn">Sign up now</button></a>
+                {% endif %}
             </div>
             <img src="{% static 'home/images/landing_page_step_up.gif' %}" alt="A nigga stepping up his game" id="steppin-up">
         </div>
