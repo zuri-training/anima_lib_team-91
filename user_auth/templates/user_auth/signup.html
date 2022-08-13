@@ -1,6 +1,6 @@
 {% load static %}
 {% load widget_tweaks %}
-{% load crispy_form_fields %}  <!--shouldn't it be {% load crispy_forms_field %}-->
+
 
 
 <!DOCTYPE html>
@@ -53,7 +53,7 @@
 
                         <fieldset class="form-input">
                             <legend>First Name</legend>
-                            {% render_field crispy_form.first_name class="inpt-field" placeholder="John" type="text" %}
+                            {% render_field form.first_name class="inpt-field" placeholder="John" type="text" %}
                         </fieldset>
                         {% for error in form.non_field_errors %}
                             {% if error %}

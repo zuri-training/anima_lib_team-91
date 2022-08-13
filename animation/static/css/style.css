@@ -48,15 +48,19 @@ main{
 a#animation {
     color: hsl(281, 71%, 43%);
 }
+body {
+    position: relative;
+}
 
 .sec1{
-    position: relative;
+    position: sticky;
+    background-color: #fff;
+    top: 0;
+    border: 1px dotted #fff;
     width: 100%;
-    margin-top: 5.7em;
+    height: fit-content;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    border: 1px dotted blue;
 }
 
 .sticky{
@@ -69,14 +73,14 @@ a#animation {
 }
 
 .secimg{
-    margin-top: -5.5em;
-    border-top: 7em solid #fff;
     border: 1px dotted #fff;
-    background-color:#fff;
     z-index: 1;
-    position: fixed;
+    background-color: rgba(232, 210, 241, 0.4);
+    /* position: sticky; */
+    /* top: 0; */
     width: 100%;
     padding: 2em;
+    padding-top: 4em;
 }
 .animate-img img{
     width: 15%;
@@ -135,7 +139,7 @@ section h4{
     justify-content: center;    
     background-color: #8B20BB;
     color: #fff;
-    padding: 1.5em;
+    padding: 0.8em 1.5em;
     text-decoration: none;
     text-transform: uppercase;
     width: fit-content;

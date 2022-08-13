@@ -100,13 +100,13 @@ span, .create {
 }
 #separator  p {
     position: absolute;
-    font-size: 0.5833333333333334rem;
+    font-size: 0.7833333333333334rem;
     left: 50%;
     top: 0;
     transform: translateX(-50%);
     background-color: var(--form-bg-color);
     line-height: 100%;
-    padding: 0 3px;
+    padding: 0 7px;
     font-weight: 600;
 }
 #form {
@@ -135,13 +135,16 @@ fieldset {
     outline: 0 !important;
     background-color: white;
 }
-
+.question {
+    font-size: 0.7rem;
+    text-align: center;
+}
 legend {
     font-size: 0.5833333333333334rem;
     line-height: 0.8333333333333334rem;
     margin-left: 0.5rem;
     font-weight: 600;
-    padding: 0 3px;
+    padding: 0 7px;
 }
 #submit-btn {
     width: 100%;

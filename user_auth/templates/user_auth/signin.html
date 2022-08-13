@@ -27,8 +27,8 @@
         {% if messages %}
         {% for message in messages %}
             <p class="alert alert-{{ message.tags }}" id="flash-msg">{{ message }}</p>
-            {% endfor %}
-            {% endif %}
+        {% endfor %}
+        {% endif %}
         <main>
             <div id="left">
                 <h4 class="to-access">
@@ -62,7 +62,7 @@
                         <p>or</p>
                     </div>
                     <img src="{% static 'user_auth/images/icons.png' %}" alt="Brand icons" id="brands">
-                    <p>Don't have an account? <a href="{% url 'user_auth:signup' %}"><span>Sign up</span></a></p>
+                    <p class="question">Don't have an account? <a href="{% url 'user_auth:signup' %}"><span>Sign up</span></a></p>
                 </div>
             </div>
         </main>

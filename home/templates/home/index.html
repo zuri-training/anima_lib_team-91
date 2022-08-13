@@ -1,26 +1,6 @@
 {% extends 'home/base.html' %}
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'home/style.css' %}">
-    <title>StyleFlow</title>
-</head>
-<body>
-    <div id="wrapper">
-        <header>
-            <div id="header-top" class="flex">
-                <img src="{% static 'home/images/logos/styleFlow_header_logo_vector.png' %}" alt="StyleFlow logo" id="logo">
-                <ul id="nav-links" class="flex">
-                    <li><a href="#" id="home">Home</a></li>
-                    <li><a href="{% url 'animation:animation' %}">Animation</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="{% url 'documentation:documentation' %}">Documentation</a></li>
-                </ul>
 
 {% block head %}
 <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
