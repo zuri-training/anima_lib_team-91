@@ -93,8 +93,14 @@
         
     </main>
     <div class="download-div">
-        <p>Click Button Below To Download Library</p>      
-        <a href="{% static 'css/styleflow.zip' %}" class="download-btn" download>Download library</a>
+        {% if user.is_authenticated %}
+            <p>Click Button Below To Download Library</p>      
+            <a href="{% static 'css/styleflow.zip' %}" class="download-btn" download>Download library</a>
+        {% else %}
+            <p>Sign up to get full access to the tools needed to customize, edit, and add animations to your projects.</p>
+            <a href="{% url 'user_auth:signup' %}" class="download-btn">Get Started</a>
+        {% endif %}
+
     </div>
 
 {% endblock main %}
