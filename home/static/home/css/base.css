@@ -19,14 +19,32 @@ html {
 }
 
 body {
-    font-family: Poppins;
-    background-color: var(--bg-color);
+    font-family: Poppins, calibri;
+    /* background-color: var(--bg-color); */
+    background-color: rgba(232, 210, 241, 0.4);
+
 }
 
 #wrapper {
     background-color: var(--bg-color);
     width: 63rem;
     margin: auto;
+}
+.alert {
+    width: 100%;
+    line-height: 2rem;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.alert-success {
+    background-color: lightgreen;
+}
+.alert-error {
+    background-color: lightpink;
+}
+.alert-warning {
+    background-color: rgb(255, 255, 208);
 }
 #menu {
     display: block;
