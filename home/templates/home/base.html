@@ -34,20 +34,14 @@
                     <ul id="nav-links" class="flex">
                         <li><a href="{% url 'home:home' %}" id="home">Home</a></li>
                         <li><a href="{% url 'animation:animation' %}" id="animation">Animation</a></li>
-<<<<<<< HEAD
+
                         <li><a href="#">About Us</a></li>
-=======
-                        <li><a href="#about-us">About Us</a></li>
->>>>>>> b1a56616f43fc0753b8a8121fc8b1d6a7851385c
+
                         <li><a href="{% url 'documentation:documentation' %}" id="documentation">Documentation</a></li>
                     </ul>
                     <ul id="auth" class="flex">
                         {% if user.is_authenticated %}
-<<<<<<< HEAD
-                            <li><a href="{% static 'css/styleflow.zip' %}"><button id="signup" class="btn beat">Download</button></a></li>
-=======
                             <li><a href="{% static 'css/styleflow.zip' %}" download><button id="signup" class="btn beat">Download</button></a></li>
->>>>>>> b1a56616f43fc0753b8a8121fc8b1d6a7851385c
                             <li><a href="{% url 'user_auth:signout' %}"><button id="login" class="btn">Sign out</button></a></li>
                         {% else %}
                             <li><a href="{% url 'user_auth:signin' %}"><button id="login" class="btn">Login</button></a></li>
