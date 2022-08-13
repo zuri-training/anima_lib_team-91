@@ -1,7 +1,15 @@
 # anima_lib_team-91
 A library that allows beginners perform basic web animation using normal language.
 
-The following are relevant links for the project:
+Instructions for local deployment;
+
+1. Create and activate virtual environment,
+
+2. Install dependencies contained in requirements.txt file (pip install -r requirements.txt),
+
+3. Run migrations and run server.
+
+The following are other relevant links for the project:
 
 https://docs.google.com/document/d/1TfR9h9DS4pubgDtNiomrwd95Xj1WWobxMckyFBRYXDI/edit#  -  Documentation Link
 
