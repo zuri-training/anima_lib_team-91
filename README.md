@@ -3,11 +3,11 @@ A library that allows beginners perform basic web animation using normal languag
 
 Instructions for local deployment;
 
-1. Create and activate virtual environment
+1. Create and activate virtual environment,
 
-2. Install dependencies contained in requirements.txt file (pip install -r requirements.txt)
+2. Install dependencies contained in requirements.txt file (pip install -r requirements.txt),
 
-3. Run server
+3. Run migrations and run server.
 
 The following are other relevant links for the project:
 
