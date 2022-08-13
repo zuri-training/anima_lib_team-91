@@ -1,0 +1,58 @@
+header{
+    height: 15vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 1%;
+}
+body{
+    margin: 0 15%;
+    padding: 0;
+
+}
+main{
+    margin-left: 0;
+}
+
+button{
+    cursor: pointer;
+    background: #D8B5E8;
+    border-radius: 5px;
+}
+
+.account{
+    border: 1px solid black;
+    margin: 0 auto auto 0;
+    padding: 7%;
+    border-radius: 6%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+a{
+    text-decoration: none;
+}
+
+.info{
+    border: 1px solid black;
+    border-radius: 3%;
+
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.mail{
+    display: flex;
+    justify-content: space-around;
+}
+
+.password{
+    display: flex;
+    justify-content: space-around; 
+}
+
+h3{
+    margin-left: 2%;
+}

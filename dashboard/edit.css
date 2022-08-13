@@ -1,0 +1,153 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+body {
+    margin: 0 13%;
+    padding: 0;
+}
+
+.blue {
+    color: blue
+}
+
+header {
+    height: 15vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 1%;
+}
+
+main {
+    margin-left: 0;
+}
+
+.account {
+    border: 1px solid black;
+    margin: 0 auto auto 0;
+    padding: 7%;
+    border-radius: 6%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.profile {
+    border: 1px solid black;
+    border-radius: 3%;
+    padding: 4% auto;
+    margin-bottom: 5%;
+}
+
+h3,
+p,
+.pix,
+.name,
+.bio,
+.location,
+.work,
+.url,
+.twitter,
+.git,
+.instag {
+    margin-left: 10%;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.fname,
+.lname,
+.bio,
+.twitter,
+.instag,
+.git,
+.url {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 10px;
+}
+
+input,
+button,
+textarea,
+select {
+    background: #D8B5E8;
+    border-radius: 5px;
+}
+
+.pix {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.submit {
+    margin: 3% 10% 3% 80%;
+    margin-right: 20%;
+}
+
+.pic-upload {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    width: 15vw;
+}
+
+.change-pix {
+    background-color: white;
+    width: 10vw;
+    cursor: pointer;
+}
+
+.name {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 20%;
+    margin-bottom: 3%;
+}
+
+input,
+textarea {
+    width: 35vw;
+}
+
+hr:hover,
+input:hover,
+textarea:hover {
+    border-color: blue;
+}
+
+button {
+    cursor: pointer;
+}
+
+.location {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    /* gap: 10px; */
+    /* margin-right: 3vw; */
+}
+
+.city {
+    width: auto;
+}
+
+.work {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    width: 50vw;
+}
+
+.city-country {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+}
+
+.checkbox {
+    background-color: white;
+}
