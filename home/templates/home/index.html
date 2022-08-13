@@ -1,6 +1,7 @@
 {% extends 'home/base.html' %}
 {% load static %}
 
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,6 +22,8 @@
                     <li><a href="#">About Us</a></li>
                     <li><a href="{% url 'documentation:documentation' %}">Documentation</a></li>
                 </ul>
+=======
+>>>>>>> b1a56616f43fc0753b8a8121fc8b1d6a7851385c
 
 {% block head %}
 <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
@@ -36,7 +39,11 @@
             <p>
                 Sign up to get full access to the tools needed to customize, edit, and add animations to your projects.
             </p>
+            {% if user.is_authenticated %}
+            <a href="{% url 'documentation:documentation' %}"><button class="btn">Get Started</button></a>
+            {% else %}
             <a href="{% url 'user_auth:signup' %}"><button class="btn">Get Started</button></a>
+            {% endif %}
         </div>
         <img src="{% static 'home/images/landing_page_fun_and_interactive.gif' %}" alt="A man typing and his dog" id="typin-dood">
     </div>
@@ -91,7 +98,11 @@
             <p>
                 Explore the world's largest pool of ready-to-use, free animations and express yourself in a more fun and exciting way.
             </p>
+            {% if user.is_authenticated %}
+            <a href="{% url 'documentation:documentation' %}"><button class="btn">Tutorial</button></a>
+            {% else %}
             <a href="{% url 'user_auth:signup' %}"><button class="btn">Get Started</button></a>
+            {% endif %}
         </div>
         
         <div id="about-us">
@@ -192,7 +203,9 @@
                 <h4 class="title">
                     Step up your animation game with StyleFlow
                 </h4>
+                {% if not user.is_authenticated %}
                 <a href="{% url 'user_auth:signup' %}"><button class="btn">Sign up now</button></a>
+                {% endif %}
             </div>
             <img src="{% static 'home/images/landing_page_step_up.gif' %}" alt="A nigga stepping up his game" id="steppin-up">
         </div>
