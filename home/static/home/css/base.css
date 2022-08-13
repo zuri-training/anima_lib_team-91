@@ -1,343 +1,376 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 :root {
-    --regular-purple: hsl(281, 71%, 43%);
-    --bg-color: hsla(0, 0%, 100%, 1);
-    --greyy: hsla(0, 0%, 50%, 1);
+  --regular-purple: hsl(281, 71%, 43%);
+  --bg-color: hsla(0, 0%, 100%, 1);
+  --greyy: hsla(0, 0%, 50%, 1);
 }
 
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 body {
-    font-family: Poppins, calibri;
-    /* background-color: var(--bg-color); */
-    background-color: rgba(232, 210, 241, 0.4);
-
+  font-family: Poppins, calibri;
+  /* background-color: var(--bg-color); */
+  background-color: rgba(232, 210, 241, 0.4);
 }
 
 #wrapper {
-    background-color: var(--bg-color);
-    width: 63rem;
-    margin: auto;
+  background-color: var(--bg-color);
+  width: 63rem;
+  margin: auto;
 }
 .alert {
-    width: 100%;
-    line-height: 2rem;
-    text-align: center;
-    font-size: 0.3rem;
-    font-weight: 400;
-    padding: 0.7rem;
+  width: 100%;
+  line-height: 2rem;
+  text-align: center;
+  font-size: 0.3rem;
+  font-weight: 400;
+  padding: 0.7rem;
 }
 .alert-success {
-    background-color: hsla(120, 73%, 75%, 0.4);
+  background-color: hsla(120, 73%, 75%, 0.4);
 }
 .alert-error {
-    background-color: hsla(351, 100%, 86%, 0.8);
+  background-color: hsla(351, 100%, 86%, 0.8);
 }
 .alert-warning {
-    background-color: rgb(255, 255, 208);
+  background-color: rgb(255, 255, 208);
 }
 #menu {
-    display: block;
-    width: 39.32125rem;
-    display: flex;
-    justify-content: space-between;
+  display: block;
+  width: 39.32125rem;
+  display: flex;
+  justify-content: space-between;
 }
-#menu-btn, #menu-btn-x {
-    display: none;
+#menu-btn,
+#menu-btn-x {
+  display: none;
 }
 
 #logo {
-    height: 3.375rem;
-    width: 9.25rem;
+  height: 3.375rem;
+  width: 9.25rem;
 }
 
 #auth {
-    width: 13.916666666666666rem;
+  width: 13.916666666666666rem;
 }
 
 #nav-links {
-    font-size: 0.6666666666666666rem;
-    width: 21.791666666666668rem;
-    line-height: 3.375rem;
+  font-size: 0.6666666666666666rem;
+  width: 21.791666666666668rem;
+  line-height: 3.375rem;
 }
-#menu-btn, #menu-btn-x {
-    width: 1.0rem;
-    font-size: 1rem;
-    height: fit-content;
-    margin: auto 0;
-    color: var(--regular-purple);
-    background-color: var(--bg-color);
-    border-width: 0;
+#menu-btn,
+#menu-btn-x {
+  width: 1rem;
+  font-size: 1rem;
+  height: fit-content;
+  margin: auto 0;
+  color: var(--regular-purple);
+  background-color: var(--bg-color);
+  border-width: 0;
 }
 #menu-btn {
-    transform: scale(2, 1);
+  transform: scale(2, 1);
 }
 #menu-btn-x {
-    transform: scale(1.5, 1.5);
+  transform: scale(1.5, 1.5);
 }
 
 #nav-links a {
-    color: var(--greyy);
+  color: var(--greyy);
 }
 
-
-#login, #signup {
-    width: 6.625rem;
-    height: 2.0833333333333335rem;
-    font-size: 0.8333333333333334rem;
+#login,
+#signup {
+  width: 6.625rem;
+  height: 2.0833333333333335rem;
+  font-size: 0.8333333333333334rem;
 }
 
 #login {
-    background-color: var(--bg-color);
-    color: var(--regular-purple);
+  background-color: var(--bg-color);
+  color: var(--regular-purple);
 }
 
 #header-top {
-    padding: 1.1458333333333333rem 5.0rem;
-    line-height: 3.375rem;
-    box-shadow: 0 2px 15px 0 hsla(0, 0%, 50%, 0.1);
+  padding: 1.1458333333333333rem 5rem;
+  line-height: 3.375rem;
+  box-shadow: 0 2px 15px 0 hsla(0, 0%, 50%, 0.1);
 }
 
 a {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
 }
 
 li {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 .flex {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .txt-center {
-    text-align: center;
+  text-align: center;
 }
 
 .r-align {
-    text-align: right;
+  text-align: right;
 }
 
 .btn {
-    border-radius: 4px;
-    font-size: 1rem;
-    height: 3.2083333333333335rem;
-    width: 11.916666666666666rem;
-    border: 1px solid var(--regular-purple);
-    background-color: var(--regular-purple);
-    color: var(--bg-color);
+  border-radius: 4px;
+  font-size: 1rem;
+  height: 3.2083333333333335rem;
+  width: 11.916666666666666rem;
+  border: 1px solid var(--regular-purple);
+  background-color: var(--regular-purple);
+  color: var(--bg-color);
 }
 
 /* footer */
 
 footer {
-    position: relative;
-    border-top: 1px solid var(--regular-purple);
-    padding-top: 1.5833333333333333rem;
-    padding-bottom: 1.5833333333333333rem;
-    padding-left: 5.0rem;
-    padding-right: 5.0rem;
+  position: relative;
+  border-top: 1px solid var(--regular-purple);
+  padding-top: 1.5833333333333333rem;
+  padding-bottom: 1.5833333333333333rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 footer #logo {
-    position: absolute;
-    top: 2.0rem;
-    left: 5.0rem;
-    width: 14.666666666666666rem;
-    height: 5.375rem;
+  position: absolute;
+  top: 2rem;
+  left: 5rem;
+  width: 14.666666666666666rem;
+  height: 5.375rem;
 }
 
-#copy, #footer-links a {
-    color: var(--greyy);
-    font-size: 1.1666666666666667rem;
-    line-height: 1.75rem;
-    font-weight: 400;
+#copy,
+#footer-links a {
+  color: var(--greyy);
+  font-size: 1.1666666666666667rem;
+  line-height: 1.75rem;
+  font-weight: 400;
 }
 p#copy {
-    position: relative;
-    z-index: 11;
-    margin: 1.75rem 0;
+  position: relative;
+  z-index: 11;
+  margin: 1.75rem 0;
 }
 #footer-links {
-    background-color: var(--greyy);
-    border-width: 0;
+  background-color: var(--greyy);
+  border-width: 0;
 }
 #footer-links a {
-    display: block;
-    width: 49.9%;
-    background-color: var(--bg-color);
+  display: block;
+  width: 49.9%;
+  background-color: var(--bg-color);
 }
 #footer-links a:last-child {
-    text-align: right;
+  text-align: right;
 }
 footer .btn {
-    width: 16.041666666666668rem;
-    height: 3.1666666666666665rem;
+  width: 16.041666666666668rem;
+  height: 3.1666666666666665rem;
 }
-
+@-webkit-keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.3);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.3);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.3);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.3);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
 
 /* Media Queries */
 
 @media screen and (max-width: 1512px) {
-    html {
-        font-size: 1.5873015873015872vw;
-    }
-    #wrapper {
-        width: 100%;
-    }
+  html {
+    font-size: 1.5873015873015872vw;
+  }
+  #wrapper {
+    width: 100%;
+  }
 }
 
 /* Mobile View */
 @media screen and (max-width: 480px) {
-    * {
-        padding: 0;
-        border: 0;
-        box-sizing: 0;
-    }
-    html {
-        font-size: 4.266666666666667vw; /* This will make the font-size to be 16px when the viewport width is 375px */
-    }
-    #wrapper {
-        width: 100%;
-    }
-    /* Handling the hamburger menu */
-    #menu {
-        display: none;
-        flex-direction: column;
-        position: static;
-        padding: 0;
-        border-radius: 8px;
-        background-color: white;
-        width: 100%;
-    }
+  * {
+    padding: 0;
+    border: 0;
+    box-sizing: 0;
+  }
+  html {
+    font-size: 4.266666666666667vw; /* This will make the font-size to be 16px when the viewport width is 375px */
+  }
+  #wrapper {
+    width: 100%;
+  }
+  /* Handling the hamburger menu */
+  #menu {
+    display: none;
+    flex-direction: column;
+    position: static;
+    padding: 0;
+    border-radius: 8px;
+    background-color: white;
+    width: 100%;
+  }
 
-    #nav-links {
-        width: 100%;
-    }
-    #nav-links a {
-        display: block;
-        font-size: 0.75rem;
-        line-height: 1.25rem;
-        font-weight: 400;
-        /* background-color: var(--regular-purple);I think it's better without the purple background */
-        margin: 0.4rem 0;
-        padding-left: 0.3rem;
-    }
-    #auth .btn {
-        font-size: 0.875rem;
-        line-height: 1.25rem;
-        font-weight: 600;
-    }
-    #auth {
-        display: flex;
-        flex-direction: row;
-        width: 50%;
-        margin-left: 0.3rem;
-    }
-    #auth .btn {
-        margin: 0;
-        padding: 3px 0;
-        width: 5rem;
-        height: fit-content;
+  #nav-links {
+    width: 100%;
+  }
+  #nav-links a {
+    display: block;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    /* background-color: var(--regular-purple);I think it's better without the purple background */
+    margin: 0.4rem 0;
+    padding-left: 0.3rem;
+  }
+  #auth .btn {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+  }
+  #auth {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin-left: 0.3rem;
+  }
+  #auth .btn {
+    margin: 0;
+    padding: 3px 0;
+    width: 5rem;
+    height: fit-content;
+  }
+  /* End of handling the hamburger menu */
 
-    }
-    /* End of handling the hamburger menu */
+  #menu-btn {
+    display: block;
+  }
+  #menu-btn-x {
+    display: none;
+  }
+  #logo {
+    height: 2rem;
+    width: auto;
+    margin: auto 0;
+  }
 
-    #menu-btn {
-        display: block;
-    }
-    #menu-btn-x {
-        display: none;
-    }
-    #logo {
-        height: 2rem;
-        width: auto;
-        margin: auto 0;
-    }
-
-    #header-top {
-        width: 100%;
-        padding: 0.6rem 0rem;
-        height: fit-content;
-        line-height: 2.5rem;
-        /* position: fixed;
+  #header-top {
+    width: 100%;
+    padding: 0.6rem 0rem;
+    height: fit-content;
+    line-height: 2.5rem;
+    /* position: fixed;
         top: 0; */
-    }
-    .btn:active {
-        border-width: 0;
-    }
-    #btn-logo {
-        padding: 0.6rem 1.25rem;
-        flex-direction: row;
-    }
-    .flex {
-        flex-direction: column;
-    }
+  }
+  .btn:active {
+    border-width: 0;
+  }
+  #btn-logo {
+    padding: 0.6rem 1.25rem;
+    flex-direction: row;
+  }
+  .flex {
+    flex-direction: column;
+  }
 
-    .btn {
-        padding: 0.791875rem 2.883125rem;
-        height: fit-content;
-        width: fit-content;
-        font-size: 1.75rem;
-        line-height: 2.625rem;
-        font-weight: 400;
-        border-radius: 4px;
-        color: hsla(0, 0%, 100%, 0.9);
-    }
+  .btn {
+    padding: 0.791875rem 2.883125rem;
+    height: fit-content;
+    width: fit-content;
+    font-size: 1.75rem;
+    line-height: 2.625rem;
+    font-weight: 400;
+    border-radius: 4px;
+    color: hsla(0, 0%, 100%, 0.9);
+  }
 
+  /* footer */
+  footer {
+    padding-top: 1rem;
+    padding-bottom: 0.5625rem;
+    padding-left: 1.5625rem;
+    padding-right: 1.5625rem;
+  }
+  footer #logo {
+    top: 1rem;
+    left: 1.5625rem;
+    width: 7.086875rem;
+    height: 2.5rem;
+  }
 
-    /* footer */
-    footer {
-        padding-top: 1rem;
-        padding-bottom: 0.5625rem;
-        padding-left: 1.5625rem;
-        padding-right: 1.5625rem;
-    }
-    footer #logo {
-        top: 1rem;
-        left: 1.5625rem;
-        width: 7.086875rem;
-        height: 2.5rem;
-
-    }
-
-    #copy, #footer-links a {
-        font-size: 0.875rem;
-        line-height: 1.25rem;
-    }
-    #footer-links {
-        flex-direction: row;
-        height: fit-content;
-        background-color: var(--bg-color); /* WARNING: un-comment this to display the separating line on mobile view but you might not like the result. For you to even see this, I know you probably wouldn't listen. */
-    }
-    #footer-links a {
-        color: var(--regular-purple);
-    }
-    p#copy {
-        width: 13.8125rem;
-        height: fit-content;
-        margin: 0.9375rem auto 0.5rem;
-    }
-    footer .btn {
-        padding: 0;
-        width: 7.875rem;
-        height: 2.25rem;
-        font-size: 0.875rem;
-        line-height: 1.25rem;
-    }
+  #copy,
+  #footer-links a {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  #footer-links {
+    flex-direction: row;
+    height: fit-content;
+    background-color: var(
+      --bg-color
+    ); /* WARNING: un-comment this to display the separating line on mobile view but you might not like the result. For you to even see this, I know you probably wouldn't listen. */
+  }
+  #footer-links a {
+    color: var(--regular-purple);
+  }
+  p#copy {
+    width: 13.8125rem;
+    height: fit-content;
+    margin: 0.9375rem auto 0.5rem;
+  }
+  footer .btn {
+    padding: 0;
+    width: 7.875rem;
+    height: 2.25rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
 }
