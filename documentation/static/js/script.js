@@ -3,6 +3,11 @@ let yesIcon = document.querySelector('#yesIcon');
 let noIcon = document.querySelector('#noIcon');
 let yesCount = document.querySelector('#yesCount');
 let noCount = document.querySelector('#noCount');
+const leftDiv = document.querySelector('.left')
+
+if (screen.availWidth < 960){
+    leftDiv.innerHTML = ""
+}
 
 likeButton.forEach(i => {
     i.addEventListener('click', e => {
@@ -41,7 +46,7 @@ function moveUpFunc(){
     if (!valueOfInput || valueOfInput !== 'class = "move-up"'){
         screen.innerHTML = screen.innerHTML = "Not the correct code, ensure exact spacing compliance."   
     }
-
+    
     else{
         screen.classList.toggle('move-up');
     } 
