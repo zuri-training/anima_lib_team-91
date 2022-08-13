@@ -34,14 +34,15 @@ body {
     width: 100%;
     line-height: 2rem;
     text-align: center;
-    font-size: 0.8rem;
-    font-weight: 600;
+    font-size: 0.3rem;
+    font-weight: 400;
+    padding: 0.7rem;
 }
 .alert-success {
-    background-color: lightgreen;
+    background-color: hsla(120, 73%, 75%, 0.4);
 }
 .alert-error {
-    background-color: lightpink;
+    background-color: hsla(351, 100%, 86%, 0.8);
 }
 .alert-warning {
     background-color: rgb(255, 255, 208);

@@ -7,17 +7,6 @@ from django.forms import ModelForm
 from django.utils.translation import gettext as _
 
 
-# class SigninUserForm(ModelForm):
-#     """The SignIn Form"""
-#     class Meta:
-#         model = User
-#         fields = ['username', 'password']
-#         error_messages = {
-#             'username': {
-#                 'unique': _('Enter another username. This one is taken')
-#             }
-#         }
-
 
 class SignupUserForm(UserCreationForm):
     first_name = forms.CharField(max_length=150, required=True)
@@ -27,3 +16,4 @@ class SignupUserForm(UserCreationForm):
     class Meta:
         model = User
         fields = ['first_name', 'last_name', 'username', 'email', 'password1', 'password2']
+

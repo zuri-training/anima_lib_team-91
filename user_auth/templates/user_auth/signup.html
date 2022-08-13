@@ -52,58 +52,51 @@
                         {% csrf_token %}
 
                         <fieldset class="form-input">
+                            <legend>Username</legend>
+                            {% render_field form.username class="inpt-field" placeholder="j_smith007" type="text" %}
+                        </fieldset>
+                        {% for error in form.username.errors %}
+                        <p class="error-msg">{{ error }}</p>
+                        {% endfor %}
+
+                        <fieldset class="form-input">
                             <legend>First Name</legend>
                             {% render_field form.first_name class="inpt-field" placeholder="John" type="text" %}
                         </fieldset>
-                        {% for error in form.non_field_errors %}
-                            {% if error %}
-                            <p id="err-msg" class="small">{{ form.error }}</p>
-                            {% endif %}
+                        {% for error in form.first_name.errors %}
+                            <p class="error-msg">{{ error }}</p>
                         {% endfor %}
+
                         <fieldset class="form-input">
                             <legend>Last Name</legend>
                             {% render_field form.last_name class="inpt-field" placeholder="Smith" type="text" %}
                         </fieldset>
-                        {% for error in form.non_field_errors %}
-                            {% if error %}
-                            <p id="err-msg" class="small">{{ form.error }}</p>
-                            {% endif %}
+                        {% for error in form.last_name.errors %}
+                            <p class="error-msg">{{ error }}</p>
                         {% endfor %}
-                        <fieldset class="form-input">
-                            <legend>Username</legend>
-                            {% render_field form.username class="inpt-field" placeholder="j_smith007" type="text" %}
-                        </fieldset>
-                        {% for error in form.non_field_errors %}
-                            {% if error %}
-                            <p id="err-msg" class="small">{{ form.error }}</p>
-                            {% endif %}
-                        {% endfor %}
+
                         <fieldset class="form-input">
                             <legend>Email</legend>
                             {% render_field form.email class="inpt-field" placeholder="johnsmith123@gmail.com" type="email" %}
                         </fieldset>
-                        {% for error in form.non_field_errors %}
-                            {% if error %}
-                            {% endif %}
-                            {% endfor %}
-                            <p id="err-msg" class="small">{{ form.error }}</p>
+                        {% for error in form.email.errors %}
+                        <p class="error-msg">{{ error }}</p>
+                        {% endfor %}
+
                         <fieldset class="form-input">
                             <legend>Password</legend>
                             {% render_field form.password1 class="inpt-field" placeholder="*******" type="password" %}
                         </fieldset>
-                        {% for error in form.non_field_errors %}
-                            {% if error %}
-                            <p id="err-msg" class="small">{{ form.error }}</p>
-                            {% endif %}
+                        {% for error in form.password1.errors %}
+                        <p class="error-msg">{{ error }}</p>
                         {% endfor %}
+
                         <fieldset class="form-input">
                             <legend>Confirm Password</legend>
                             {% render_field form.password2 class="inpt-field" placeholder="*******" type="password" %}
                         </fieldset>
-                        {% for error in form.non_field_errors %}
-                            {% if error %}
-                            <p id="err-msg" class="small">{{ form.error }}</p>
-                            {% endif %}
+                        {% for error in form.password2.errors %}
+                        <p class="error-msg">{{ error }}</p>
                         {% endfor %}
 
                         <input type="submit" id="submit-btn" value="Create account">
