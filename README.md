@@ -5,15 +5,17 @@ A library that allows beginners perform basic web animation using normal languag
 
 ## Instructions for local deployment;
 
-1. Create and activate a Python virtual environment
+1. Clone the repo using - `$ git clone <repo_link>`
 
-2. Install dependencies contained in requirements.txt file - `pip install -r requirements.txt`
+2. Create and activate a Python virtual environment in the project's root directory
 
-3. Make migrations - `python manage.py makemigrations`
+3. Install dependencies contained in requirements.txt file - `pip install -r requirements.txt`
 
-4. Run migrations - `python manage.py migrate`
+4. Make migrations - `python manage.py makemigrations`
 
-5. Run the server - `python manage.py runserver`
+5. Run migrations - `python manage.py migrate`
+
+6. Run the server - `python manage.py runserver`
 
 
 ### The following are other relevant links for the project:
