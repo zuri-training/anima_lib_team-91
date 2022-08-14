@@ -17,6 +17,17 @@ A library that allows beginners perform basic web animation using normal languag
 
 6. Run the server - `python manage.py runserver`
 
+### Project Folder Structure
+
+- *anima_lib_team_91* : this is the project root app
+
+- *home* : this is the app that handles the project's home page and the FAQs pages' route and views
+
+- *user_auth* : this app handles the user authentication aspect. It handles user registration, login, logout and other authentication aspect.
+
+- *animation* : this app handles the animation aspect of the project which is the core functionality of the project. It also handles the view and routes for the animation page which shows a demo of the animations built
+
+- *documentation* : this app handles the routes and views of the documentation page which is an interactive page for new users to have a visual test of our animation library.
 
 ### The following are other relevant links for the project:
 
