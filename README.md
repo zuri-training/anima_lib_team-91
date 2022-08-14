@@ -1,15 +1,22 @@
 # anima_lib_team-91
+# STYLEFLOW
 A library that allows beginners perform basic web animation using normal language.
 
-Instructions for local deployment;
 
-1. Create and activate virtual environment,
+## Instructions for local deployment;
 
-2. Install dependencies contained in requirements.txt file (pip install -r requirements.txt),
+1. Create and activate a Python virtual environment
 
-3. Run migrations and run server.
+2. Install dependencies contained in requirements.txt file - `pip install -r requirements.txt`
 
-The following are other relevant links for the project:
+3. Make migrations - `python manage.py makemigrations`
+
+4. Run migrations - `python manage.py migrate`
+
+5. Run the server - `python manage.py runserver`
+
+
+### The following are other relevant links for the project:
 
 https://docs.google.com/document/d/1TfR9h9DS4pubgDtNiomrwd95Xj1WWobxMckyFBRYXDI/edit#  -  Documentation Link
 
