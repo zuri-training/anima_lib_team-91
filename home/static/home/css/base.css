@@ -197,10 +197,10 @@ footer .btn {
     transform: scale(1.3);
   }
   28% {
-    transform: scale(1);
+    transform: scale(0.8);
   }
   42% {
-    transform: scale(1.3);
+    transform: scale(1.1);
   }
   70% {
     transform: scale(1);
@@ -214,14 +214,17 @@ footer .btn {
     transform: scale(1.3);
   }
   28% {
-    transform: scale(1);
+    transform: scale(0.8);
   }
   42% {
-    transform: scale(1.3);
+    transform: scale(1.1);
   }
   70% {
     transform: scale(1);
   }
+}
+.beat {
+    animation: beat 5s infinite;
 }
 
 /* Media Queries */
