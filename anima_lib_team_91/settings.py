@@ -153,4 +153,3 @@ else:
     EMAIL_USE_TLS = True
     EMAIL_HOST_USER = 'rookiemaster001@gmail.com'
     EMAIL_HOST_PASSWORD = 'r**k!3m@st3r001@gm@!l.C*m'
-    
