@@ -1,0 +1,43 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'user_auth/css/sign_in_out.css' %}">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"> -->
+    <link rel="shortcut icon" href="{% static 'home/images/logos/favicon.ico' %}" type="image/x-icon">
+
+
+    <title>StyleFlow 
+        {% if title %}
+            - {{ title }}
+        {% endif %}
+    </title>
+</head>
+<body>
+    <div id="wrapper">
+
+        <header>
+            <a href="{% url 'home:home' %}"><img src="{% static 'home/images/logos/styleFlow_header_logo_vector.png' %}" alt="StyleFlow logo" id="logo"></a>
+        </header>
+        {% if messages %}
+        {% for message in messages %}
+            <p class="alert alert-{{ message.tags }}" id="flash-msg">{{ message }}</p>
+        {% endfor %}
+        {% endif %}
+        
+        {% block main %}{% endblock main %}
+
+        
+
+
+
+
+    </div>
+    
+</body>
+</html>

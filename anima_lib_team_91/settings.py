@@ -14,6 +14,8 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 import os
 from pathlib import Path
 
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -41,14 +43,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # pip installed APPS
-    'crispy_forms',                                 # to custom style the forms
     'widget_tweaks',                                # to customize the forms
 
     # custom APPS created
     'home.apps.HomeConfig',                         # this is the base app for the website
     'user_auth.apps.UserAuthConfig',                # this APP handles user_authentication
     'documentation.apps.DocumentationConfig',       # app handling documentation
-    'animation.apps.AnimationConfig',
+    'animation.apps.AnimationConfig',               # APP handling the animation and its demo page
+    'password.apps.PasswordConfig',                 # APP handling change password and reset passsword functionality
 ]
 
 MIDDLEWARE = [
@@ -138,8 +140,17 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-# CRISPY FORM
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
-
 # Login redirect url
 LOGIN_REDIRECT_URL = 'home:home'
+
+if DEBUG:
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'        # developmet only
+else:
+    # To send the password reset email
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+    EMAIL_HOST = 'smtp.googlemail.com'
+    EMAIL_PORT = 587
+    EMAIL_USE_TLS = True
+    EMAIL_HOST_USER = 'rookiemaster001@gmail.com'
+    EMAIL_HOST_PASSWORD = 'r**k!3m@st3r001@gm@!l.C*m'
+    

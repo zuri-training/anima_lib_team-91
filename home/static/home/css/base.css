@@ -28,11 +28,13 @@ body {
   margin: auto;
 }
 .alert {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  color: black;
+  font-weight: 500;
+
   width: 100%;
-  line-height: 2rem;
   text-align: center;
-  font-size: 0.3rem;
-  font-weight: 400;
   padding: 0.7rem;
 }
 .alert-success {

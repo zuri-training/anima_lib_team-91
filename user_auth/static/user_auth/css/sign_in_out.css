@@ -113,6 +113,9 @@ span, .create {
 #form {
     padding: 0.25rem 3.3333333333333335rem;
 }
+#form p {
+    text-align: center;
+}
 form {
     width: 100%;
     margin-bottom: 0.85rem;
@@ -185,18 +188,15 @@ form + p {
     margin-top: 0.3rem;
     margin-bottom: 0.8rem;
 }
-#flash-msg {
+
+.alert {
     font-size: 0.8rem;
     line-height: 1rem;
     color: black;
     font-weight: 500;
-}
-.alert {
+
     width: 100%;
-    line-height: 2rem;
     text-align: center;
-    font-size: 0.3rem;
-    font-weight: 400;
     padding: 0.7rem;
 }
 .alert-success {
@@ -216,6 +216,15 @@ form + p {
     font-style: italic;
     margin-top: -0.5rem;
 }
+
+.pg-middle {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
 input::placeholder {
     color: hsla(0, 2%, 78%, 0.5);
 }
