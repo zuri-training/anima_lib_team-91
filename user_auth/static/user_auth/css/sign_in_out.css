@@ -239,7 +239,41 @@ input::placeholder {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
+    * {
+        padding: 0;
+        border: 0;
+        box-sizing: 0;
+    }
+    html {
+        font-size: 4.266666666666667vw; /* This will make the font-size to be 16px when the viewport width is 375px */
+    }
+    #wrapper {
+        width: 100%;
+    }
+    #left img {
+        display: none;
+    }
+    main {
+        padding: 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    #left {
+        width: 100%;
+        margin: 0 auto 1rem;
+    }
+    #left .to-access {
+        text-align: center;
+    }
+    #container {
+        width: 100%;
+    }
+    header a {
+        margin: 0.5rem 2rem;
+    }
+    #form {
+        padding: 1.25rem 1.3333333333333335rem;
+    }
     
 }
-

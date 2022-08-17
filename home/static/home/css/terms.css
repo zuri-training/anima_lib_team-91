@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+:root {
+    --purple: hsla(281, 71%, 43%, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Poppins, calibri;
+}
+.h1, .h2, .h3 {
+    color: var(--purple);
+}
+main {
+    margin: 0 5.0rem;
+}
+#terms {
+    margin: 2.0rem 0;
+}
+.h1 {
+    margin-top: 2.6666666666666665rem;
+    line-height: 3.75rem;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.h2 {
+    margin-top: 0.16666666666666666rem;
+    line-height: 3.125rem;
+    font-size: 2.0833333333333335rem;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+.h1, .h2 {
+    text-align: center;
+}
+.p, .li{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
+}
+.h3 {
+    line-height: 2.16rem;
+    font-size: 1.4400000000000002rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.section {
+    margin: 3rem 0;
+}
+.section :last-of-type {
+    margin-bottom: 0;
+}
+ul {
+    margin-left: 3rem;
+}
+.dashed::marker {
+    content: "- ";
+}
+.alpha {
+    list-style-type: lower-alpha;
+}
+
+.none {
+    list-style-type: none;
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        margin: 0 1rem;
+    }
+}

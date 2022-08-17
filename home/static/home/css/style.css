@@ -48,6 +48,9 @@ a#home {
 .x-center {
     margin: 0 auto;
 }
+#about-us .btn {
+    border-radius: 20px;
+}
 
 .btn {
     border-radius: 5px;

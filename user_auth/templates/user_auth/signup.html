@@ -78,7 +78,7 @@
 
             <p>Already have an account? <a href="{% url 'user_auth:signin' %}"><span>Sign in</span></a></p>
         </div>
-        <p class="small">By clicking on the button above, you agree to StyleFlow <a href="#"><span>Terms of Service</span> and <span>Privacy Policy.</span></a></p>
+        <p class="small">By clicking on the button above, you agree to StyleFlow <a href="{% url 'home:t_n_c' %}"><span>Terms of Service</span></a> and <a href="{% url 'home:privacy_policy' %}"><span>Privacy Policy.</span></a></p>
     </div>
 </main>
 {% endblock main %}
