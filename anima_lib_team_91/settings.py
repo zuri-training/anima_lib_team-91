@@ -142,6 +142,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Login redirect url
 LOGIN_REDIRECT_URL = 'home:home'
+LOGIN_URL = 'user_auth:signin'
+
 
 if DEBUG:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'        # developmet only
